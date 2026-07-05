@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# DuckDB local/scratch (keep committed data under data/ if using git-scraping)
+*.duckdb.wal
+*.tmp
+
+# Build output (static site) — regenerated each run
+# Uncomment if you don't want the built HTML tracked:
+# site/
+# dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
