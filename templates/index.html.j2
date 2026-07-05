@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>AI News</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0; padding: 0 1rem;
+    background: Canvas; color: CanvasText;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 1.5rem 0 4rem; }
+  header h1 { margin: 0 0 .25rem; font-size: 1.6rem; }
+  .meta { color: GrayText; font-size: .85rem; margin-bottom: 1.25rem; }
+  .filters {
+    display: flex; flex-wrap: wrap; gap: .4rem .6rem;
+    padding: .75rem 0 1rem; margin-bottom: 1rem;
+    border-bottom: 1px solid color-mix(in srgb, CanvasText 15%, transparent);
+  }
+  .filters label { font-size: .82rem; white-space: nowrap; cursor: pointer; }
+  .filters .count { color: GrayText; }
+  ul.items { list-style: none; margin: 0; padding: 0; }
+  li.item { padding: .9rem 0; border-bottom: 1px solid color-mix(in srgb, CanvasText 10%, transparent); }
+  li.item a.title { font-size: 1.05rem; font-weight: 600; text-decoration: none; color: LinkText; }
+  li.item a.title:hover { text-decoration: underline; }
+  .byline { font-size: .8rem; color: GrayText; margin-top: .2rem; }
+  .byline .src { font-weight: 600; color: CanvasText; }
+  .summary { font-size: .9rem; color: color-mix(in srgb, CanvasText 80%, GrayText); margin-top: .4rem; }
+  .toolbar { display: flex; gap: .75rem; align-items: center; margin-bottom: .75rem; flex-wrap: wrap; }
+  input[type="search"] { flex: 1 1 200px; padding: .45rem .6rem; font-size: .9rem;
+    border: 1px solid GrayText; border-radius: 6px; background: Canvas; color: CanvasText; }
+  button.linkish { background: none; border: none; color: LinkText; cursor: pointer; font-size: .82rem; padding: 0; }
+  footer { margin-top: 2rem; font-size: .8rem; color: GrayText; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>AI News</h1>
+    <div class="meta">{{ item_count }} items · updated {{ generated_at }}</div>
+  </header>
+
+  <div class="toolbar">
+    <input type="search" id="search" placeholder="Filter by keyword…" aria-label="Search">
+    <button class="linkish" id="all-on">All</button>
+    <button class="linkish" id="all-off">None</button>
+  </div>
+
+  <div class="filters" id="filters">
+    {% for s in sources %}
+    <label><input type="checkbox" class="src-filter" value="{{ s.id }}" checked>
+      {{ s.name }} <span class="count">({{ s.n }})</span></label>
+    {% endfor %}
+  </div>
+
+  <ul class="items" id="list">
+    {% for it in items %}
+    <li class="item" data-source="{{ it.source_id }}"
+        data-text="{{ (it.title ~ ' ' ~ it.source_name ~ ' ' ~ (it.summary or '')) | lower }}">
+      <a class="title" href="{{ it.link }}" target="_blank" rel="noopener noreferrer">{{ it.title }}</a>
+      <div class="byline"><span class="src">{{ it.source_name }}</span> · {{ it.published_at | fmt_date }}</div>
+      {% if it.summary %}<div class="summary">{{ it.summary }}</div>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+
+  <footer>Personal aggregate · not indexed · rebuilt each fetch cycle.</footer>
+</div>
+
+<script>
+(function () {
+  const list = document.getElementById('list');
+  const items = Array.from(list.querySelectorAll('li.item'));
+  const search = document.getElementById('search');
+  const checks = Array.from(document.querySelectorAll('.src-filter'));
+
+  function apply() {
+    const q = search.value.trim().toLowerCase();
+    const active = new Set(checks.filter(c => c.checked).map(c => c.value));
+    for (const el of items) {
+      const okSrc = active.has(el.dataset.source);
+      const okText = !q || el.dataset.text.includes(q);
+      el.style.display = (okSrc && okText) ? '' : 'none';
+    }
+  }
+  search.addEventListener('input', apply);
+  checks.forEach(c => c.addEventListener('change', apply));
+  document.getElementById('all-on').addEventListener('click', () => { checks.forEach(c => c.checked = true); apply(); });
+  document.getElementById('all-off').addEventListener('click', () => { checks.forEach(c => c.checked = false); apply(); });
+})();
+</script>
+</body>
+</html>

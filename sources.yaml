@@ -1,0 +1,120 @@
+# Source config — the source of truth for what gets aggregated.
+# Adding/removing a source is a one-line change here, not a code change.
+#
+# Fields:
+#   id           unique slug (stable; used as the DB primary key)
+#   name         display name shown on the site
+#   homepage_url site to link to / run feed discovery against
+#   feed_url     explicit feed URL. Omit to auto-discover from homepage_url.
+#   type         'rss' | 'hn'  (twitter is Phase 2, not implemented)
+#   active       set false to disable without deleting
+
+sources:
+  # --- RSS / Atom native ---
+  - id: anthropic
+    name: Anthropic News
+    homepage_url: https://www.anthropic.com/news
+    type: rss
+    active: true
+
+  - id: openai
+    name: OpenAI News
+    homepage_url: https://openai.com/news/
+    type: rss
+    active: true
+
+  - id: deepmind
+    name: Google DeepMind Blog
+    homepage_url: https://deepmind.google/discover/blog/
+    type: rss
+    active: true
+
+  - id: huggingface
+    name: Hugging Face Blog
+    homepage_url: https://huggingface.co/blog
+    feed_url: https://huggingface.co/blog/feed.xml
+    type: rss
+    active: true
+
+  - id: bair
+    name: BAIR Blog
+    homepage_url: https://bair.berkeley.edu/blog/
+    type: rss
+    active: true
+
+  - id: simonwillison
+    name: Simon Willison's Weblog
+    homepage_url: https://simonwillison.net/
+    feed_url: https://simonwillison.net/atom/everything/
+    type: rss
+    active: true
+
+  - id: interconnects
+    name: Interconnects (Nathan Lambert)
+    homepage_url: https://www.interconnects.ai/
+    feed_url: https://www.interconnects.ai/feed
+    type: rss
+    active: true
+
+  - id: aheadofai
+    name: Ahead of AI (Sebastian Raschka)
+    homepage_url: https://magazine.sebastianraschka.com/
+    feed_url: https://magazine.sebastianraschka.com/feed
+    type: rss
+    active: true
+
+  - id: marginalrevolution
+    name: Marginal Revolution
+    homepage_url: https://marginalrevolution.com/
+    type: rss
+    active: true
+
+  - id: thezvi
+    name: Don't Worry About the Vase (Zvi Mowshowitz)
+    homepage_url: https://thezvi.substack.com/
+    feed_url: https://thezvi.substack.com/feed
+    type: rss
+    active: true
+
+  - id: importai
+    name: Import AI (Jack Clark)
+    homepage_url: https://importai.substack.com/
+    feed_url: https://importai.substack.com/feed
+    type: rss
+    active: true
+
+  - id: epochai
+    name: Epoch AI
+    homepage_url: https://epochai.substack.com/
+    feed_url: https://epochai.substack.com/feed
+    type: rss
+    active: true
+
+  - id: normaltech
+    name: AI as Normal Technology (Narayanan & Kapoor)
+    homepage_url: https://www.normaltech.ai/
+    type: rss
+    active: true
+
+  - id: thebatch
+    name: The Batch (DeepLearning.AI)
+    homepage_url: https://www.deeplearning.ai/the-batch/
+    type: rss
+    # lower confidence there's a clean native feed; discovery will disable it
+    # automatically if none is found. Substitute a mail-to-RSS bridge if wanted.
+    active: true
+
+  # --- Hacker News (via hnrss.org bridge) ---
+  - id: hn_frontpage
+    name: Hacker News (front page)
+    homepage_url: https://news.ycombinator.com/
+    feed_url: https://hnrss.org/frontpage
+    type: hn
+    active: true
+
+  - id: hn_ai
+    name: Hacker News (AI/LLM)
+    homepage_url: https://news.ycombinator.com/
+    feed_url: https://hnrss.org/newest?q=AI+OR+LLM+OR+%22machine+learning%22&points=50
+    type: hn
+    active: true
