@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from .config import SITE_DIR, SITE_MAX_ITEMS, TEMPLATES_DIR
+from .config import CUSTOM_DOMAIN, SITE_DIR, SITE_MAX_ITEMS, TEMPLATES_DIR
 from .db import connect
 
 
@@ -71,6 +71,9 @@ def build() -> int:
     (SITE_DIR / "index.html").write_text(html, encoding="utf-8")
     # GitHub Pages: skip Jekyll processing.
     (SITE_DIR / ".nojekyll").write_text("", encoding="utf-8")
+    # Bind the custom domain on every build so it can't drift.
+    if CUSTOM_DOMAIN:
+        (SITE_DIR / "CNAME").write_text(CUSTOM_DOMAIN + "\n", encoding="utf-8")
     print(f"Wrote {SITE_DIR / 'index.html'} ({len(items)} items, {len(sources)} sources).")
     return 0
 

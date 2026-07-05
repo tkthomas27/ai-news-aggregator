@@ -19,3 +19,7 @@ HTTP_TIMEOUT = 20  # seconds
 # How many items to render on the site (keeps the page snappy; full history
 # still lives in the DB).
 SITE_MAX_ITEMS = 400
+
+# Custom domain for GitHub Pages. Written to site/CNAME on every build so the
+# subdomain binding can't drift. Set to None to serve on the default URL.
+CUSTOM_DOMAIN = "ainews.timothykylethomas.me"
