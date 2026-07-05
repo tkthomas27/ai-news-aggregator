@@ -48,10 +48,20 @@ jobs:
           git add data/ site/
           if git diff --cached --quiet; then
             echo "No changes to commit."
-          else
-            git commit -m "Update feeds ($(date -u +%Y-%m-%dT%H:%MZ))"
-            git push
+            exit 0
           fi
+          git commit -m "Update feeds ($(date -u +%Y-%m-%dT%H:%MZ))"
+          # Race-safe push: if another run pushed first, rebase and retry.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt); rebasing on origin/main..."
+            git pull --rebase --autostash origin main || true
+          done
+          echo "::error::Could not push after 5 attempts."
+          exit 1
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
