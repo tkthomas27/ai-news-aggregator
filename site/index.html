@@ -41,7 +41,7 @@
 <div class="wrap">
   <header>
     <h1>AI News</h1>
-    <div class="meta">400 items · updated 2026-07-11 23:09 UTC</div>
+    <div class="meta">400 items · updated 2026-07-12 00:10 UTC</div>
   </header>
 
   <div class="toolbar">
@@ -77,7 +77,7 @@
       Hacker News (AI/LLM) <span class="count">(33)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="hn_frontpage" checked>
-      Hacker News (front page) <span class="count">(382)</span></label>
+      Hacker News (front page) <span class="count">(384)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="huggingface" checked>
       Hugging Face Blog <span class="count">(823)</span></label>
@@ -95,7 +95,7 @@
       OpenAI News <span class="count">(1048)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="simonwillison" checked>
-      Simon Willison's Weblog <span class="count">(46)</span></label>
+      Simon Willison's Weblog <span class="count">(47)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="thebatch" checked>
       The Batch (DeepLearning.AI) <span class="count">(0)</span></label>
@@ -103,6 +103,27 @@
   </div>
 
   <ul class="items" id="list">
+    
+    <li class="item" data-source="simonwillison"
+        data-text="sqlite-utils 4.1 simon willison's weblog release: sqlite-utils 4.1 the first dot-release since 4.0 a few days ago , introducing a number of minor new features. sqlite-utils insert and sqlite-utils upsert now accept a --code option for providing a block of python code (or a path to a .py file) that defines a rows() function or rows iterable of rows to insert, as an alternative to importing from a file. ( #684 ) sqlite-utils already had features that allow you to pass blocks of python code as cli arguments, for example this one for the sqlite-utils convert command: sqlite - utils convert content . db articles headline ' def convert ( v">
+      <a class="title" href="https://simonwillison.net/2026/Jul/11/sqlite-utils/" target="_blank" rel="noopener noreferrer">sqlite-utils 4.1</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-07-11 23:50</div>
+      <div class="summary">Release: sqlite-utils 4.1 The first dot-release since 4.0 a few days ago , introducing a number of minor new features. sqlite-utils insert and sqlite-utils upsert now accept a --code option for providing a block of Python code (or a path to a .py file) that defines a rows() function or rows iterable of rows to insert, as an alternative to importing from a file. ( #684 ) sqlite-utils already had features that allow you to pass blocks of Python code as CLI arguments, for example this one for the sqlite-utils convert command: sqlite - utils convert content . db articles headline ' def convert ( v</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="doctors die. it's not like the rest of us, but it should be (2016) hacker news (front page) article url: https://archive.cancerworld.net/featured/how-doctors-die/ comments url: https://news.ycombinator.com/item?id=48876741 points: 10 # comments: 2">
+      <a class="title" href="https://archive.cancerworld.net/featured/how-doctors-die/" target="_blank" rel="noopener noreferrer">Doctors die. It's not like the rest of us, but it should be (2016)</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-11 23:15</div>
+      <div class="summary">Article URL: https://archive.cancerworld.net/featured/how-doctors-die/ Comments URL: https://news.ycombinator.com/item?id=48876741 Points: 10 # Comments: 2</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="weightlifting beats running for blood sugar control, researchers find hacker news (front page) article url: https://news.vt.edu/articles/2025/11/research_fralinbiomed_yanweightlifting.html comments url: https://news.ycombinator.com/item?id=48876593 points: 55 # comments: 28">
+      <a class="title" href="https://news.vt.edu/articles/2025/11/research_fralinbiomed_yanweightlifting.html" target="_blank" rel="noopener noreferrer">Weightlifting beats running for blood sugar control, researchers find</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-11 22:49</div>
+      <div class="summary">Article URL: https://news.vt.edu/articles/2025/11/research_fralinbiomed_yanweightlifting.html Comments URL: https://news.ycombinator.com/item?id=48876593 Points: 55 # Comments: 28</div>
+    </li>
     
     <li class="item" data-source="hn_frontpage"
         data-text="mesh llm: distributed ai computing on iroh hacker news (front page) article url: https://www.iroh.computer/blog/mesh-llm comments url: https://news.ycombinator.com/item?id=48876505 points: 4 # comments: 1">
@@ -1274,17 +1295,17 @@
     </li>
     
     <li class="item" data-source="openai"
-        data-text="gpt-5.5 bio bug bounty openai news details about the openai bio bounty program">
-      <a class="title" href="https://openai.com/index/bio-bug-bounty" target="_blank" rel="noopener noreferrer">GPT-5.5 Bio Bug Bounty</a>
-      <div class="byline"><span class="src">OpenAI News</span> · 2026-07-09 10:00</div>
-      <div class="summary">Details about the OpenAI Bio Bounty program</div>
-    </li>
-    
-    <li class="item" data-source="openai"
         data-text="chatgpt is now a partner for your most ambitious work openai news chatgpt work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.">
       <a class="title" href="https://openai.com/index/chatgpt-for-your-most-ambitious-work" target="_blank" rel="noopener noreferrer">ChatGPT is now a partner for your most ambitious work</a>
       <div class="byline"><span class="src">OpenAI News</span> · 2026-07-09 10:00</div>
       <div class="summary">ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.</div>
+    </li>
+    
+    <li class="item" data-source="openai"
+        data-text="gpt-5.5 bio bug bounty openai news details about the openai bio bounty program">
+      <a class="title" href="https://openai.com/index/bio-bug-bounty" target="_blank" rel="noopener noreferrer">GPT-5.5 Bio Bug Bounty</a>
+      <div class="byline"><span class="src">OpenAI News</span> · 2026-07-09 10:00</div>
+      <div class="summary">Details about the OpenAI Bio Bounty program</div>
     </li>
     
     <li class="item" data-source="openai"
@@ -1833,18 +1854,18 @@
       <div class="summary">Article URL: https://kb.cert.org/vuls/id/213560 Comments URL: https://news.ycombinator.com/item?id=48825749 Points: 66 # Comments: 12</div>
     </li>
     
-    <li class="item" data-source="huggingface"
-        data-text="native-speed vllm transformers modeling backend hugging face blog ">
-      <a class="title" href="https://huggingface.co/blog/native-speed-vllm-transformers-backend" target="_blank" rel="noopener noreferrer">Native-speed vLLM transformers modeling backend</a>
-      <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-07-08 00:00</div>
-      
-    </li>
-    
     <li class="item" data-source="openai"
         data-text="introducing gpt-live openai news a new generation of voice models for natural human-ai interaction, now powering chatgpt voice.">
       <a class="title" href="https://openai.com/index/introducing-gpt-live" target="_blank" rel="noopener noreferrer">Introducing GPT-Live</a>
       <div class="byline"><span class="src">OpenAI News</span> · 2026-07-08 00:00</div>
       <div class="summary">A new generation of voice models for natural human-AI interaction, now powering ChatGPT Voice.</div>
+    </li>
+    
+    <li class="item" data-source="huggingface"
+        data-text="native-speed vllm transformers modeling backend hugging face blog ">
+      <a class="title" href="https://huggingface.co/blog/native-speed-vllm-transformers-backend" target="_blank" rel="noopener noreferrer">Native-speed vLLM transformers modeling backend</a>
+      <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-07-08 00:00</div>
+      
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -2303,15 +2324,15 @@
     </li>
     
     <li class="item" data-source="huggingface"
-        data-text="run ai workloads on any cloud, store on hugging face: zero-egress storage with skypilot hugging face blog ">
-      <a class="title" href="https://huggingface.co/blog/skypilot-hf-storage" target="_blank" rel="noopener noreferrer">Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot</a>
+        data-text="lerobot v0.6.0: imagine, evaluate, improve hugging face blog ">
+      <a class="title" href="https://huggingface.co/blog/lerobot-release-v060" target="_blank" rel="noopener noreferrer">LeRobot v0.6.0: Imagine, Evaluate, Improve</a>
       <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-07-07 00:00</div>
       
     </li>
     
     <li class="item" data-source="huggingface"
-        data-text="lerobot v0.6.0: imagine, evaluate, improve hugging face blog ">
-      <a class="title" href="https://huggingface.co/blog/lerobot-release-v060" target="_blank" rel="noopener noreferrer">LeRobot v0.6.0: Imagine, Evaluate, Improve</a>
+        data-text="run ai workloads on any cloud, store on hugging face: zero-egress storage with skypilot hugging face blog ">
+      <a class="title" href="https://huggingface.co/blog/skypilot-hf-storage" target="_blank" rel="noopener noreferrer">Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot</a>
       <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-07-07 00:00</div>
       
     </li>
@@ -2881,27 +2902,6 @@
       <a class="title" href="https://www.readtheline.ca/p/al-vigier-canadas-ai-strategy-shouldnt" target="_blank" rel="noopener noreferrer">Al Vigier: Canada's AI strategy shouldn't include secret Palantir bills</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-06 00:04</div>
       <div class="summary">Article URL: https://www.readtheline.ca/p/al-vigier-canadas-ai-strategy-shouldnt Comments URL: https://news.ycombinator.com/item?id=48799256 Points: 121 # Comments: 43</div>
-    </li>
-    
-    <li class="item" data-source="huggingface"
-        data-text="🤗 kernels: major updates hugging face blog ">
-      <a class="title" href="https://huggingface.co/blog/revamped-kernels" target="_blank" rel="noopener noreferrer">🤗 Kernels: Major Updates</a>
-      <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-07-06 00:00</div>
-      
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="the private capture of public genius hacker news (front page) article url: https://www.wysr.xyz/p/the-private-capture-of-public-genius comments url: https://news.ycombinator.com/item?id=48799178 points: 60 # comments: 17">
-      <a class="title" href="https://www.wysr.xyz/p/the-private-capture-of-public-genius" target="_blank" rel="noopener noreferrer">The Private Capture of Public Genius</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-05 23:52</div>
-      <div class="summary">Article URL: https://www.wysr.xyz/p/the-private-capture-of-public-genius Comments URL: https://news.ycombinator.com/item?id=48799178 Points: 60 # Comments: 17</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="has_not_been_viewed_much hacker news (front page) article url: https://iamwillwang.com/notes/has-not-been-viewed-much/ comments url: https://news.ycombinator.com/item?id=48799155 points: 139 # comments: 38">
-      <a class="title" href="https://iamwillwang.com/notes/has-not-been-viewed-much/" target="_blank" rel="noopener noreferrer">Has_not_been_viewed_much</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-05 23:49</div>
-      <div class="summary">Article URL: https://iamwillwang.com/notes/has-not-been-viewed-much/ Comments URL: https://news.ycombinator.com/item?id=48799155 Points: 139 # Comments: 38</div>
     </li>
     
   </ul>
