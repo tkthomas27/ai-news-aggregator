@@ -41,7 +41,7 @@
 <div class="wrap">
   <header>
     <h1>AI News</h1>
-    <div class="meta">400 items · updated 2026-07-31 00:14 UTC</div>
+    <div class="meta">400 items · updated 2026-07-31 03:50 UTC</div>
   </header>
 
   <div class="toolbar">
@@ -74,10 +74,10 @@
       Google DeepMind Blog <span class="count">(109)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="hn_ai" checked>
-      Hacker News (AI/LLM) <span class="count">(65)</span></label>
+      Hacker News (AI/LLM) <span class="count">(66)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="hn_frontpage" checked>
-      Hacker News (front page) <span class="count">(1550)</span></label>
+      Hacker News (front page) <span class="count">(1552)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="huggingface" checked>
       Hugging Face Blog <span class="count">(840)</span></label>
@@ -92,10 +92,10 @@
       Marginal Revolution <span class="count">(138)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="openai" checked>
-      OpenAI News <span class="count">(1071)</span></label>
+      OpenAI News <span class="count">(1072)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="simonwillison" checked>
-      Simon Willison's Weblog <span class="count">(106)</span></label>
+      Simon Willison's Weblog <span class="count">(109)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="thebatch" checked>
       The Batch (DeepLearning.AI) <span class="count">(0)</span></label>
@@ -104,11 +104,25 @@
 
   <ul class="items" id="list">
     
+    <li class="item" data-source="hn_frontpage"
+        data-text="a california aquifer may have crossed the point of no return hacker news (front page) article url: https://www.science.org/content/article/california-aquifer-may-have-crossed-point-no-return comments url: https://news.ycombinator.com/item?id=49118663 points: 9 # comments: 1">
+      <a class="title" href="https://www.science.org/content/article/california-aquifer-may-have-crossed-point-no-return" target="_blank" rel="noopener noreferrer">A California aquifer may have crossed the point of no return</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-31 03:27</div>
+      <div class="summary">Article URL: https://www.science.org/content/article/california-aquifer-may-have-crossed-point-no-return Comments URL: https://news.ycombinator.com/item?id=49118663 Points: 9 # Comments: 1</div>
+    </li>
+    
     <li class="item" data-source="simonwillison"
         data-text="advancing the price-performance frontier with gpt‑5.6 simon willison's weblog advancing the price-performance frontier with gpt‑5.6 huge price drop from openai today: gpt-5.6 terra got a 20% reduction, and gpt-5.6 luna got a massive 80% drop. openai credit 5.6 sol with enabling this: in how gpt‑5.6 fuses frontier intelligence with frontier efficiency they describe using 5.6 sol to optimize load balancing, and more impressively to optimize inference itself: we also used gpt‑5.6 sol to optimize the model’s forward pass: the computation that transforms inputs into next-token predictions. even when individual operations are fast, excess memory movement, synchronization, and">
       <a class="title" href="https://simonwillison.net/2026/Jul/30/luna-price-drop/" target="_blank" rel="noopener noreferrer">Advancing the price-performance frontier with GPT‑5.6</a>
       <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-07-30 23:58</div>
       <div class="summary">Advancing the price-performance frontier with GPT‑5.6 Huge price drop from OpenAI today: GPT-5.6 Terra got a 20% reduction, and GPT-5.6 Luna got a massive 80% drop. OpenAI credit 5.6 Sol with enabling this: in How GPT‑5.6 fuses frontier intelligence with frontier efficiency they describe using 5.6 Sol to optimize load balancing, and more impressively to optimize inference itself: We also used GPT‑5.6 Sol to optimize the model’s forward pass: the computation that transforms inputs into next-token predictions. Even when individual operations are fast, excess memory movement, synchronization, and</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="the religion of speed hacker news (front page) article url: https://graybeard.ing/the-religion-of-speed/ comments url: https://news.ycombinator.com/item?id=49117284 points: 29 # comments: 8">
+      <a class="title" href="https://graybeard.ing/the-religion-of-speed/" target="_blank" rel="noopener noreferrer">The Religion of Speed</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-30 23:43</div>
+      <div class="summary">Article URL: https://graybeard.ing/the-religion-of-speed/ Comments URL: https://news.ycombinator.com/item?id=49117284 Points: 29 # Comments: 8</div>
     </li>
     
     <li class="item" data-source="simonwillison"
@@ -130,6 +144,13 @@
       <a class="title" href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" target="_blank" rel="noopener noreferrer">Investigating three real-world incidents in our cybersecurity evaluations</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-30 23:00</div>
       <div class="summary">Article URL: https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals Comments URL: https://news.ycombinator.com/item?id=49116922 Points: 48 # Comments: 30</div>
+    </li>
+    
+    <li class="item" data-source="simonwillison"
+        data-text="llm 0.32rc2 simon willison's weblog release: llm 0.32rc2 hot on the heels of rc1 , this fixes a dependency issue and also adds two neat new features: the default model for users who have not set their own default is now gpt-5.6 luna . it was previously gpt-4o mini . luna is a much better and more recent model, albeit slightly more expensive - $0.20 per million input tokens and $1.20 per million output tokens, compared to $0.15/$0.60 for 4o mini. you can switch back to 4o mini using llm models default gpt-4o-mini , or switch to gpt-5 nano , an even cheaper default model ($0.05/$0.40), using llm models default gpt-5-nano . #1576 n">
+      <a class="title" href="https://simonwillison.net/2026/Jul/30/llm-rc2/" target="_blank" rel="noopener noreferrer">llm 0.32rc2</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-07-30 22:52</div>
+      <div class="summary">Release: llm 0.32rc2 Hot on the heels of RC1 , this fixes a dependency issue and also adds two neat new features: The default model for users who have not set their own default is now GPT-5.6 Luna . It was previously GPT-4o mini . Luna is a much better and more recent model, albeit slightly more expensive - $0.20 per million input tokens and $1.20 per million output tokens, compared to $0.15/$0.60 for 4o mini. You can switch back to 4o mini using llm models default gpt-4o-mini , or switch to GPT-5 nano , an even cheaper default model ($0.05/$0.40), using llm models default gpt-5-nano . #1576 N</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -279,6 +300,13 @@
       <div class="summary">1. Joshua Rothman on lookism. 2. Young adults are using AI to manage their social media feeds (WSJ). 3. What predicts an NBA Achilles tear? 4. LLM data set on changing cultural trends over the centuries. 5. Xi&#8217;an Famous Foods is coming to Clarendon. 6. If a German expressionist movie director had filmed a silent [&#8230;] The post Thursday assorted links appeared first on Marginal REVOLUTION .</div>
     </li>
     
+    <li class="item" data-source="hn_ai"
+        data-text="citadel buys situational awareness's stock portfolio after big losses in ai hacker news (ai/llm) article url: https://www.wsj.com/finance/citadel-buys-situational-awarenesss-stock-portfolio-after-big-losses-in-ai-5117159b comments url: https://news.ycombinator.com/item?id=49111879 points: 50 # comments: 10">
+      <a class="title" href="https://www.wsj.com/finance/citadel-buys-situational-awarenesss-stock-portfolio-after-big-losses-in-ai-5117159b" target="_blank" rel="noopener noreferrer">Citadel Buys Situational Awareness's Stock Portfolio After Big Losses in AI</a>
+      <div class="byline"><span class="src">Hacker News (AI/LLM)</span> · 2026-07-30 16:00</div>
+      <div class="summary">Article URL: https://www.wsj.com/finance/citadel-buys-situational-awarenesss-stock-portfolio-after-big-losses-in-ai-5117159b Comments URL: https://news.ycombinator.com/item?id=49111879 Points: 50 # Comments: 10</div>
+    </li>
+    
     <li class="item" data-source="hn_frontpage"
         data-text="pgtestdb's template cloning approach to testing is fast hacker news (front page) article url: https://brandur.org/fragments/pgtestdb comments url: https://news.ycombinator.com/item?id=49111687 points: 7 # comments: 1">
       <a class="title" href="https://brandur.org/fragments/pgtestdb" target="_blank" rel="noopener noreferrer">Pgtestdb's template cloning approach to testing is fast</a>
@@ -286,11 +314,25 @@
       <div class="summary">Article URL: https://brandur.org/fragments/pgtestdb Comments URL: https://news.ycombinator.com/item?id=49111687 Points: 7 # Comments: 1</div>
     </li>
     
+    <li class="item" data-source="simonwillison"
+        data-text="llm-chat-completions-server 0.1a0 simon willison's weblog release: llm-chat-completions-server 0.1a0 a key goal of the new content-addressable logs in llm 0.32rc1 was being able to support openai chat completion style requests where each incoming message extends the previous conversation, like this: curl http://localhost:8002/v1/chat/completions \ -h 'content-type: application/json' \ -d '{ "model": "qwen3.5-4b", "messages": [ {"role": "user", "content": "capital of france?"}, {"role": "assistant", "content": "paris."}, {"role": "user", "content": "germany?"} ] }' here the conversation state is tracked by the client, so each of these requests gets lo">
+      <a class="title" href="https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/" target="_blank" rel="noopener noreferrer">llm-chat-completions-server 0.1a0</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-07-30 15:43</div>
+      <div class="summary">Release: llm-chat-completions-server 0.1a0 A key goal of the new content-addressable logs in LLM 0.32rc1 was being able to support OpenAI Chat Completion style requests where each incoming message extends the previous conversation, like this: curl http://localhost:8002/v1/chat/completions \ -H 'Content-Type: application/json' \ -d '{ "model": "qwen3.5-4b", "messages": [ {"role": "user", "content": "Capital of France?"}, {"role": "assistant", "content": "Paris."}, {"role": "user", "content": "Germany?"} ] }' Here the conversation state is tracked by the client, so each of these requests gets lo</div>
+    </li>
+    
     <li class="item" data-source="hn_frontpage"
         data-text="solving poker in custom webgpu kernels hacker news (front page) article url: https://phulin.me/blog/poker/ comments url: https://news.ycombinator.com/item?id=49111523 points: 20 # comments: 1">
       <a class="title" href="https://phulin.me/blog/poker/" target="_blank" rel="noopener noreferrer">Solving poker in custom WebGPU kernels</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-30 15:38</div>
       <div class="summary">Article URL: https://phulin.me/blog/poker/ Comments URL: https://news.ycombinator.com/item?id=49111523 Points: 20 # Comments: 1</div>
+    </li>
+    
+    <li class="item" data-source="simonwillison"
+        data-text="llm 0.32rc1 simon willison's weblog release: llm 0.32rc1 this rc for llm 0.32 finishes the work that started in llm 0.32a0 - it adds a new schema design that does a much better job of capturing the details of the prompts and responses returned by the latest model families. the most important change is the use of content-addressable hash ids for stored messages. this allows de-duplication in the database, and means that llm can now represent trees of messages for forked conversations. since it involves a significant schema change - new tables only, and old data should not be affected at all - it's worth running a backup of your e">
+      <a class="title" href="https://simonwillison.net/2026/Jul/30/llm-rc1/" target="_blank" rel="noopener noreferrer">llm 0.32rc1</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-07-30 15:30</div>
+      <div class="summary">Release: llm 0.32rc1 This RC for LLM 0.32 finishes the work that started in LLM 0.32a0 - it adds a new schema design that does a much better job of capturing the details of the prompts and responses returned by the latest model families. The most important change is the use of content-addressable hash IDs for stored messages. This allows de-duplication in the database, and means that LLM can now represent trees of messages for forked conversations. Since it involves a significant schema change - new tables only, and old data should not be affected at all - it's worth running a backup of your e</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -648,6 +690,13 @@
       <a class="title" href="https://github.com/funador/claude-code-merge-queue" target="_blank" rel="noopener noreferrer">Show HN: A local merge queue for parallel Claude Code agents</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-30 00:20</div>
       <div class="summary">I have been pushing up to 90 commits a day on a MacBook Air via 4-5 parallel agents. As you can imagine when all the agents try to build, test and run dev servers on an 8GB machine it is the fast lane to a force quit and restart. I also did not want to pay the CI minutes on 90 pushes a day. So I designed a local merge queue to have all commits land one at a time and fully tested. Hopefully this helps other folks with more modest machines. Appreciate any feedback. Comments URL: https://news.ycombinator.com/item?id=49104747 Points: 17 # Comments: 6</div>
+    </li>
+    
+    <li class="item" data-source="openai"
+        data-text="how avatarin built a 24/7 retail agent with gpt-realtime openai news avatarin uses openai’s gpt-realtime to give yamada denki shoppers 24/7 multilingual support. in two weeks, 30,000 people used the agent and 92% of survey responses were positive.">
+      <a class="title" href="https://openai.com/index/avatarin" target="_blank" rel="noopener noreferrer">How avatarin built a 24/7 retail agent with GPT-Realtime</a>
+      <div class="byline"><span class="src">OpenAI News</span> · 2026-07-30 00:00</div>
+      <div class="summary">avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive.</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -2853,55 +2902,6 @@
       <a class="title" href="https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality" target="_blank" rel="noopener noreferrer">What is happening to jobs? Separating AI hype from reality</a>
       <div class="byline"><span class="src">Hacker News (AI/LLM)</span> · 2026-07-25 22:51</div>
       <div class="summary">Article URL: https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality Comments URL: https://news.ycombinator.com/item?id=49052570 Points: 64 # Comments: 70</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="cloudflare's new ai traffic options for customers hacker news (front page) article url: https://blog.cloudflare.com/content-independence-day-ai-options/ comments url: https://news.ycombinator.com/item?id=49052564 points: 74 # comments: 46">
-      <a class="title" href="https://blog.cloudflare.com/content-independence-day-ai-options/" target="_blank" rel="noopener noreferrer">Cloudflare's new AI traffic options for customers</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-25 22:50</div>
-      <div class="summary">Article URL: https://blog.cloudflare.com/content-independence-day-ai-options/ Comments URL: https://news.ycombinator.com/item?id=49052564 Points: 74 # Comments: 46</div>
-    </li>
-    
-    <li class="item" data-source="simonwillison"
-        data-text="ruff v0.16.0 simon willison's weblog ruff v0.16.0 astral shipped a significant new version of their ruff python linting tool a few days ago on july 23rd. i noticed today because my various ci jobs all started failing thanks to new default ruff checks and my unpinned "ruff" dev dependency. from brent westbrook's announcement post: ruff now enables 413 rules by default, up from 59 in previous versions. since ruff's default rule set was last modified in v0.1.0 , the number of rules in ruff has grown from 708 to 968. many of these rules catch severe issues, including syntax errors and immediate runtime errors but were not previously ">
-      <a class="title" href="https://simonwillison.net/2026/Jul/25/ruff/" target="_blank" rel="noopener noreferrer">Ruff v0.16.0</a>
-      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-07-25 22:44</div>
-      <div class="summary">Ruff v0.16.0 Astral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd. I noticed today because my various CI jobs all started failing thanks to new default Ruff checks and my unpinned "ruff" dev dependency. From Brent Westbrook's announcement post: Ruff now enables 413 rules by default, up from 59 in previous versions. Since Ruff's default rule set was last modified in v0.1.0 , the number of rules in Ruff has grown from 708 to 968. Many of these rules catch severe issues, including syntax errors and immediate runtime errors but were not previously </div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="gm backs sodium ion batteries for u.s. grid storage hacker news (front page) article url: https://spectrum.ieee.org/sodium-ion-battery-peak-energy comments url: https://news.ycombinator.com/item?id=49051947 points: 157 # comments: 61">
-      <a class="title" href="https://spectrum.ieee.org/sodium-ion-battery-peak-energy" target="_blank" rel="noopener noreferrer">GM Backs Sodium Ion Batteries for U.S. Grid Storage</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-25 21:48</div>
-      <div class="summary">Article URL: https://spectrum.ieee.org/sodium-ion-battery-peak-energy Comments URL: https://news.ycombinator.com/item?id=49051947 Points: 157 # Comments: 61</div>
-    </li>
-    
-    <li class="item" data-source="hn_ai"
-        data-text="becoming a research engineer at a big llm lab hacker news (ai/llm) article url: https://www.maxmynter.com/pages/blog/jobhunt comments url: https://news.ycombinator.com/item?id=49051707 points: 50 # comments: 18">
-      <a class="title" href="https://www.maxmynter.com/pages/blog/jobhunt" target="_blank" rel="noopener noreferrer">Becoming a Research Engineer at a Big LLM Lab</a>
-      <div class="byline"><span class="src">Hacker News (AI/LLM)</span> · 2026-07-25 21:19</div>
-      <div class="summary">Article URL: https://www.maxmynter.com/pages/blog/jobhunt Comments URL: https://news.ycombinator.com/item?id=49051707 Points: 50 # Comments: 18</div>
-    </li>
-    
-    <li class="item" data-source="hn_ai"
-        data-text="'ai mania is eviscerating global decision-making' hacker news (ai/llm) article url: https://daringfireball.net/linked/2026/07/25/ai-mania-nikhil-suresh comments url: https://news.ycombinator.com/item?id=49051692 points: 56 # comments: 18">
-      <a class="title" href="https://daringfireball.net/linked/2026/07/25/ai-mania-nikhil-suresh" target="_blank" rel="noopener noreferrer">'AI Mania Is Eviscerating Global Decision-Making'</a>
-      <div class="byline"><span class="src">Hacker News (AI/LLM)</span> · 2026-07-25 21:18</div>
-      <div class="summary">Article URL: https://daringfireball.net/linked/2026/07/25/ai-mania-nikhil-suresh Comments URL: https://news.ycombinator.com/item?id=49051692 Points: 56 # Comments: 18</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="turn and face the strange hacker news (front page) article url: https://fly.io/blog/kurt-scott-money-sprites/ comments url: https://news.ycombinator.com/item?id=49051369 points: 170 # comments: 119">
-      <a class="title" href="https://fly.io/blog/kurt-scott-money-sprites/" target="_blank" rel="noopener noreferrer">Turn And Face The Strange</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-25 20:43</div>
-      <div class="summary">Article URL: https://fly.io/blog/kurt-scott-money-sprites/ Comments URL: https://news.ycombinator.com/item?id=49051369 Points: 170 # Comments: 119</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="the new rules of context engineering for claude 5 generation models hacker news (front page) article url: https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models comments url: https://news.ycombinator.com/item?id=49051361 points: 231 # comments: 144">
-      <a class="title" href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models" target="_blank" rel="noopener noreferrer">The new rules of context engineering for Claude 5 generation models</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-07-25 20:42</div>
-      <div class="summary">Article URL: https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models Comments URL: https://news.ycombinator.com/item?id=49051361 Points: 231 # Comments: 144</div>
     </li>
     
   </ul>
