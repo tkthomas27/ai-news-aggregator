@@ -41,7 +41,7 @@
 <div class="wrap">
   <header>
     <h1>AI News</h1>
-    <div class="meta">400 items · updated 2026-08-13 23:57 UTC</div>
+    <div class="meta">400 items · updated 2026-08-14 02:44 UTC</div>
   </header>
 
   <div class="toolbar">
@@ -77,7 +77,7 @@
       Hacker News (AI/LLM) <span class="count">(95)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="hn_frontpage" checked>
-      Hacker News (front page) <span class="count">(2355)</span></label>
+      Hacker News (front page) <span class="count">(2360)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="huggingface" checked>
       Hugging Face Blog <span class="count">(851)</span></label>
@@ -95,7 +95,7 @@
       OpenAI News <span class="count">(1149)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="simonwillison" checked>
-      Simon Willison's Weblog <span class="count">(158)</span></label>
+      Simon Willison's Weblog <span class="count">(161)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="thebatch" checked>
       The Batch (DeepLearning.AI) <span class="count">(0)</span></label>
@@ -103,6 +103,34 @@
   </div>
 
   <ul class="items" id="list">
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="bluesky protocol services hacker news (front page) article url: https://atproto.com/blog/introducing-bluesky-protocol-services comments url: https://news.ycombinator.com/item?id=49293324 points: 73 # comments: 18">
+      <a class="title" href="https://atproto.com/blog/introducing-bluesky-protocol-services" target="_blank" rel="noopener noreferrer">Bluesky Protocol Services</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-14 00:14</div>
+      <div class="summary">Article URL: https://atproto.com/blog/introducing-bluesky-protocol-services Comments URL: https://news.ycombinator.com/item?id=49293324 Points: 73 # Comments: 18</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="sparrowmap – cameras that watch government vehicles hacker news (front page) article url: https://sparrowmap.com/ comments url: https://news.ycombinator.com/item?id=49293294 points: 49 # comments: 11">
+      <a class="title" href="https://sparrowmap.com/" target="_blank" rel="noopener noreferrer">SparrowMap – Cameras that watch government vehicles</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-14 00:10</div>
+      <div class="summary">Article URL: https://sparrowmap.com/ Comments URL: https://news.ycombinator.com/item?id=49293294 Points: 49 # Comments: 11</div>
+    </li>
+    
+    <li class="item" data-source="simonwillison"
+        data-text="sqlite-utils 4.2.1 simon willison's weblog release: sqlite-utils 4.2.1 fixes a crashing bug in sqlite-utils 4.2 . i'd introduced code that looks like this: from typing_extensions import self it turned out the typing-extensions package was not listed as a dependency for sqlite-utils - it was installed by one of the other dependencies in the dev dependency group , but when you uvx sqlite-utils directly you don't get those dependencies. as part of fixing this i figured out how to run a smoke test to ensure the cli tool still works even without those dev dependencies, which can be run from the project checkout: uv run --isolated --no-defau">
+      <a class="title" href="https://simonwillison.net/2026/Aug/13/sqlite-utils-2/" target="_blank" rel="noopener noreferrer">sqlite-utils 4.2.1</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-08-13 23:53</div>
+      <div class="summary">Release: sqlite-utils 4.2.1 Fixes a crashing bug in sqlite-utils 4.2 . I'd introduced code that looks like this: from typing_extensions import Self It turned out the typing-extensions package was not listed as a dependency for sqlite-utils - it was installed by one of the other dependencies in the dev dependency group , but when you uvx sqlite-utils directly you don't get those dependencies. As part of fixing this I figured out how to run a smoke test to ensure the CLI tool still works even without those dev dependencies, which can be run from the project checkout: uv run --isolated --no-defau</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="blog about things you don't understand yet hacker news (front page) article url: https://www.seangoedecke.com/blog-about-things-you-dont-understand-yet/ comments url: https://news.ycombinator.com/item?id=49293087 points: 16 # comments: 3">
+      <a class="title" href="https://www.seangoedecke.com/blog-about-things-you-dont-understand-yet/" target="_blank" rel="noopener noreferrer">Blog about things you don't understand yet</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-13 23:39</div>
+      <div class="summary">Article URL: https://www.seangoedecke.com/blog-about-things-you-dont-understand-yet/ Comments URL: https://news.ycombinator.com/item?id=49293087 Points: 16 # Comments: 3</div>
+    </li>
     
     <li class="item" data-source="hn_frontpage"
         data-text="how ai text watermarking works hacker news (front page) article url: https://declaude.org/watermarking/ comments url: https://news.ycombinator.com/item?id=49292932 points: 4 # comments: 0">
@@ -125,11 +153,25 @@
       <div class="summary">Article URL: https://gruhn.me/blog/2026-08-13/ Comments URL: https://news.ycombinator.com/item?id=49291268 Points: 70 # Comments: 23</div>
     </li>
     
+    <li class="item" data-source="simonwillison"
+        data-text="sqlite-utils 4.2 simon willison's weblog release: sqlite-utils 4.2 lots of improvements in this one relating to the table.transform() feature , which adds support for complex alter table operations by creating a fresh table, copying across the data and then dropping and replacing the old one. transform() now preserves a much larger array of edge-case schema definitions, including check constraints, unique constraints and even comments describing the columns. there are also new introspection properties for check constraints, and a whole lot of other smaller changes. includes contributions from bunlong heng , ethanhawkes-gif , rami abd">
+      <a class="title" href="https://simonwillison.net/2026/Aug/13/sqlite-utils/" target="_blank" rel="noopener noreferrer">sqlite-utils 4.2</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-08-13 20:11</div>
+      <div class="summary">Release: sqlite-utils 4.2 Lots of improvements in this one relating to the table.transform() feature , which adds support for complex alter table operations by creating a fresh table, copying across the data and then dropping and replacing the old one. transform() now preserves a much larger array of edge-case schema definitions, including check constraints, unique constraints and even comments describing the columns. There are also new introspection properties for check constraints, and a whole lot of other smaller changes. Includes contributions from Bunlong Heng , ethanhawkes-gif , Rami Abd</div>
+    </li>
+    
     <li class="item" data-source="hn_frontpage"
         data-text="how gödel's proof works (2020) hacker news (front page) article url: https://www.quantamagazine.org/how-godels-proof-works-20200714/ comments url: https://news.ycombinator.com/item?id=49290969 points: 40 # comments: 24">
       <a class="title" href="https://www.quantamagazine.org/how-godels-proof-works-20200714/" target="_blank" rel="noopener noreferrer">How Gödel's Proof Works (2020)</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-13 19:44</div>
       <div class="summary">Article URL: https://www.quantamagazine.org/how-godels-proof-works-20200714/ Comments URL: https://news.ycombinator.com/item?id=49290969 Points: 40 # Comments: 24</div>
+    </li>
+    
+    <li class="item" data-source="simonwillison"
+        data-text="llm-gemini 0.33 simon willison's weblog release: llm-gemini 0.33 it's been a while since the last llm-gemini release. this version of the plugin adds support for today's gemini 3.7 flash release, plus gemini-3.6-flash , gemini-3.5-flash-lite and two embedding models gemini-embedding-2 and gemini-embedding-001 . the plugin is also upgraded for compatibility with llm 0.32, which means you can now see reasoning traces and you can also enable server-side tools using this pattern: llm -m gemini-3.7-flash -t codeexecution \ 'use python to calculate (factorial of 13) * 3' i had gemini 3.7 flash draw me some pelicans riding bicycles at high">
+      <a class="title" href="https://simonwillison.net/2026/Aug/13/llm-gemini/" target="_blank" rel="noopener noreferrer">llm-gemini 0.33</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-08-13 19:37</div>
+      <div class="summary">Release: llm-gemini 0.33 It's been a while since the last llm-gemini release. This version of the plugin adds support for today's Gemini 3.7 Flash release, plus gemini-3.6-flash , gemini-3.5-flash-lite and two embedding models gemini-embedding-2 and gemini-embedding-001 . The plugin is also upgraded for compatibility with LLM 0.32, which means you can now see reasoning traces and you can also enable server-side tools using this pattern: llm -m gemini-3.7-flash -T CodeExecution \ 'use python to calculate (factorial of 13) * 3' I had Gemini 3.7 Flash draw me some pelicans riding bicycles at high</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -151,6 +193,13 @@
       <a class="title" href="https://github.com/systemd/systemd/issues/40262" target="_blank" rel="noopener noreferrer">Single log line is 49KB+ (ext4) / 110KB+ (btrfs) of systemd-journald disk writes</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-13 18:41</div>
       <div class="summary">Article URL: https://github.com/systemd/systemd/issues/40262 Comments URL: https://news.ycombinator.com/item?id=49290215 Points: 98 # Comments: 49</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="hello, me. it's been a while hacker news (front page) article url: https://themech.net/2026/08/hello-me-its-been-a-while/ comments url: https://news.ycombinator.com/item?id=49290166 points: 31 # comments: 11">
+      <a class="title" href="https://themech.net/2026/08/hello-me-its-been-a-while/" target="_blank" rel="noopener noreferrer">Hello, me. It's been a while</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-13 18:37</div>
+      <div class="summary">Article URL: https://themech.net/2026/08/hello-me-its-been-a-while/ Comments URL: https://news.ycombinator.com/item?id=49290166 Points: 31 # Comments: 11</div>
     </li>
     
     <li class="item" data-source="marginalrevolution"
@@ -200,6 +249,13 @@
       <a class="title" href="https://donkeybas.com/" target="_blank" rel="noopener noreferrer">Donkey.bas is 45 Years Old – 131 line of Glory</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-13 17:45</div>
       <div class="summary">Article URL: https://donkeybas.com/ Comments URL: https://news.ycombinator.com/item?id=49289465 Points: 12 # Comments: 3</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="i want extern "fil-c" hacker news (front page) article url: https://domenkozar.com/2026/08/13/i-want-extern-fil-c/ comments url: https://news.ycombinator.com/item?id=49289260 points: 33 # comments: 9">
+      <a class="title" href="https://domenkozar.com/2026/08/13/i-want-extern-fil-c/" target="_blank" rel="noopener noreferrer">I want extern "fil-C"</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-13 17:32</div>
+      <div class="summary">Article URL: https://domenkozar.com/2026/08/13/i-want-extern-fil-c/ Comments URL: https://news.ycombinator.com/item?id=49289260 Points: 33 # Comments: 9</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -413,17 +469,17 @@
     </li>
     
     <li class="item" data-source="hn_frontpage"
-        data-text="deepseek harness developer preview hacker news (front page) https://github.com/deepseek-ai/deepseek-harness https://deepseek-harness.github.io/deepseek-harness/en/guide... comments url: https://news.ycombinator.com/item?id=49285244 points: 382 # comments: 179">
-      <a class="title" href="https://deepseek.com/harness/en/" target="_blank" rel="noopener noreferrer">DeepSeek Harness developer preview</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-13 12:58</div>
-      <div class="summary">https://github.com/deepseek-ai/deepseek-harness https://deepseek-harness.github.io/deepseek-harness/en/guide... Comments URL: https://news.ycombinator.com/item?id=49285244 Points: 382 # Comments: 179</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
         data-text="deepseek harness hacker news (front page) article url: https://github.com/deepseek-ai/deepseek-harness comments url: https://news.ycombinator.com/item?id=49285244 points: 18 # comments: 0">
       <a class="title" href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener noreferrer">DeepSeek Harness</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-13 12:58</div>
       <div class="summary">Article URL: https://github.com/deepseek-ai/deepseek-harness Comments URL: https://news.ycombinator.com/item?id=49285244 Points: 18 # Comments: 0</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="deepseek harness developer preview hacker news (front page) https://github.com/deepseek-ai/deepseek-harness https://deepseek-harness.github.io/deepseek-harness/en/guide... comments url: https://news.ycombinator.com/item?id=49285244 points: 382 # comments: 179">
+      <a class="title" href="https://deepseek.com/harness/en/" target="_blank" rel="noopener noreferrer">DeepSeek Harness developer preview</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-13 12:58</div>
+      <div class="summary">https://github.com/deepseek-ai/deepseek-harness https://deepseek-harness.github.io/deepseek-harness/en/guide... Comments URL: https://news.ycombinator.com/item?id=49285244 Points: 382 # Comments: 179</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -504,17 +560,17 @@
     </li>
     
     <li class="item" data-source="hn_frontpage"
-        data-text="codex in chatgpt desktop app for linux is now in preview hacker news (front page) article url: https://community.openai.com/t/codex-in-chatgpt-desktop-app-for-linux-is-now-in-preview/1390027 comments url: https://news.ycombinator.com/item?id=49281916 points: 377 # comments: 263">
-      <a class="title" href="https://community.openai.com/t/codex-in-chatgpt-desktop-app-for-linux-is-now-in-preview/1390027" target="_blank" rel="noopener noreferrer">Codex in ChatGPT desktop app for Linux is now in preview</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-13 04:53</div>
-      <div class="summary">Article URL: https://community.openai.com/t/codex-in-chatgpt-desktop-app-for-linux-is-now-in-preview/1390027 Comments URL: https://news.ycombinator.com/item?id=49281916 Points: 377 # Comments: 263</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
         data-text="chatgpt desktop (codex desktop) for linux hacker news (front page) article url: https://openai.com/codex/ comments url: https://news.ycombinator.com/item?id=49281916 points: 54 # comments: 23">
       <a class="title" href="https://openai.com/codex/" target="_blank" rel="noopener noreferrer">ChatGPT Desktop (Codex Desktop) for Linux</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-13 04:53</div>
       <div class="summary">Article URL: https://openai.com/codex/ Comments URL: https://news.ycombinator.com/item?id=49281916 Points: 54 # Comments: 23</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="codex in chatgpt desktop app for linux is now in preview hacker news (front page) article url: https://community.openai.com/t/codex-in-chatgpt-desktop-app-for-linux-is-now-in-preview/1390027 comments url: https://news.ycombinator.com/item?id=49281916 points: 377 # comments: 263">
+      <a class="title" href="https://community.openai.com/t/codex-in-chatgpt-desktop-app-for-linux-is-now-in-preview/1390027" target="_blank" rel="noopener noreferrer">Codex in ChatGPT desktop app for Linux is now in preview</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-13 04:53</div>
+      <div class="summary">Article URL: https://community.openai.com/t/codex-in-chatgpt-desktop-app-for-linux-is-now-in-preview/1390027 Comments URL: https://news.ycombinator.com/item?id=49281916 Points: 377 # Comments: 263</div>
     </li>
     
     <li class="item" data-source="simonwillison"
@@ -2142,13 +2198,6 @@
     </li>
     
     <li class="item" data-source="openai"
-        data-text="virgin atlantic sharpens customer journeys with chatgpt work openai news virgin atlantic is accelerating research, product planning, and decision-making with chatgpt work, helping teams connect signals across the customer journey.">
-      <a class="title" href="https://openai.com/index/virgin-atlantic/chatgpt-work" target="_blank" rel="noopener noreferrer">Virgin Atlantic sharpens customer journeys with ChatGPT Work</a>
-      <div class="byline"><span class="src">OpenAI News</span> · 2026-08-10 00:00</div>
-      <div class="summary">Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey.</div>
-    </li>
-    
-    <li class="item" data-source="openai"
         data-text="how zapier transformed core marketing processes with chatgpt work openai news the enterprise marketing team at zapier uses chatgpt work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate reporting.">
       <a class="title" href="https://openai.com/index/zapier" target="_blank" rel="noopener noreferrer">How Zapier transformed core marketing processes with ChatGPT Work</a>
       <div class="byline"><span class="src">OpenAI News</span> · 2026-08-10 00:00</div>
@@ -2167,6 +2216,13 @@
       <a class="title" href="https://huggingface.co/blog/muse-glimmer" target="_blank" rel="noopener noreferrer">Meta is back with Muse Glimmer: local, agentic, multimodal, and open source</a>
       <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-08-10 00:00</div>
       
+    </li>
+    
+    <li class="item" data-source="openai"
+        data-text="virgin atlantic sharpens customer journeys with chatgpt work openai news virgin atlantic is accelerating research, product planning, and decision-making with chatgpt work, helping teams connect signals across the customer journey.">
+      <a class="title" href="https://openai.com/index/virgin-atlantic/chatgpt-work" target="_blank" rel="noopener noreferrer">Virgin Atlantic sharpens customer journeys with ChatGPT Work</a>
+      <div class="byline"><span class="src">OpenAI News</span> · 2026-08-10 00:00</div>
+      <div class="summary">Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey.</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -2667,17 +2723,17 @@
     </li>
     
     <li class="item" data-source="hn_frontpage"
-        data-text="the original url for this prediction will no longer be available in 11 years (2011) hacker news (front page) article url: http://longbets.org/601/ comments url: https://news.ycombinator.com/item?id=49228458 points: 105 # comments: 21">
-      <a class="title" href="http://longbets.org/601/" target="_blank" rel="noopener noreferrer">The original URL for this prediction will no longer be available in 11 years (2011)</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-09 04:30</div>
-      <div class="summary">Article URL: http://longbets.org/601/ Comments URL: https://news.ycombinator.com/item?id=49228458 Points: 105 # Comments: 21</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
         data-text=""the original url for this prediction will no longer be available in 11 years." (2011) hacker news (front page) article url: https://longbets.org/601/ comments url: https://news.ycombinator.com/item?id=49228458 points: 45 # comments: 9">
       <a class="title" href="https://longbets.org/601/" target="_blank" rel="noopener noreferrer">"The original URL for this prediction will no longer be available in 11 years." (2011)</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-09 04:30</div>
       <div class="summary">Article URL: https://longbets.org/601/ Comments URL: https://news.ycombinator.com/item?id=49228458 Points: 45 # Comments: 9</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="the original url for this prediction will no longer be available in 11 years (2011) hacker news (front page) article url: http://longbets.org/601/ comments url: https://news.ycombinator.com/item?id=49228458 points: 105 # comments: 21">
+      <a class="title" href="http://longbets.org/601/" target="_blank" rel="noopener noreferrer">The original URL for this prediction will no longer be available in 11 years (2011)</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-09 04:30</div>
+      <div class="summary">Article URL: http://longbets.org/601/ Comments URL: https://news.ycombinator.com/item?id=49228458 Points: 105 # Comments: 21</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -2846,62 +2902,6 @@
       <a class="title" href="https://newrepublic.com/post/214111/amazon-data-center-biggest-pollution-source-entire-country" target="_blank" rel="noopener noreferrer">Amazon Is Creating the Biggest Pollution Source in the Country</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-08 17:27</div>
       <div class="summary">Article URL: https://newrepublic.com/post/214111/amazon-data-center-biggest-pollution-source-entire-country Comments URL: https://news.ycombinator.com/item?id=49223845 Points: 29 # Comments: 6</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="linkedin feed blocker hacker news (front page) article url: https://github.com/andrewpollack/linkedin-feed-blocker comments url: https://news.ycombinator.com/item?id=49223475 points: 12 # comments: 6">
-      <a class="title" href="https://github.com/andrewpollack/linkedin-feed-blocker" target="_blank" rel="noopener noreferrer">LinkedIn Feed Blocker</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-08 16:49</div>
-      <div class="summary">Article URL: https://github.com/andrewpollack/linkedin-feed-blocker Comments URL: https://news.ycombinator.com/item?id=49223475 Points: 12 # Comments: 6</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="wireblast a 100 gbps packet generator in go using af_xdp hacker news (front page) article url: https://toonk.io/index.html comments url: https://news.ycombinator.com/item?id=49223105 points: 3 # comments: 1">
-      <a class="title" href="https://toonk.io/index.html" target="_blank" rel="noopener noreferrer">Wireblast a 100 Gbps packet generator in Go using AF_XDP</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-08 16:07</div>
-      <div class="summary">Article URL: https://toonk.io/index.html Comments URL: https://news.ycombinator.com/item?id=49223105 Points: 3 # Comments: 1</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="fastmail offers eu data region hacker news (front page) article url: https://www.fastmail.com/blog/fastmail-offers-eu-data-region/ comments url: https://news.ycombinator.com/item?id=49223082 points: 40 # comments: 8">
-      <a class="title" href="https://www.fastmail.com/blog/fastmail-offers-eu-data-region/" target="_blank" rel="noopener noreferrer">Fastmail offers EU data region</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-08 16:04</div>
-      <div class="summary">Article URL: https://www.fastmail.com/blog/fastmail-offers-eu-data-region/ Comments URL: https://news.ycombinator.com/item?id=49223082 Points: 40 # Comments: 8</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="can intel finally beat arm on performance per watt? hacker news (front page) article url: https://hackaday.com/2026/08/08/want-energy-efficiency-dude-youre-getting-a-dell/ comments url: https://news.ycombinator.com/item?id=49223079 points: 26 # comments: 6">
-      <a class="title" href="https://hackaday.com/2026/08/08/want-energy-efficiency-dude-youre-getting-a-dell/" target="_blank" rel="noopener noreferrer">Can Intel finally beat ARM on performance per Watt?</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-08 16:04</div>
-      <div class="summary">Article URL: https://hackaday.com/2026/08/08/want-energy-efficiency-dude-youre-getting-a-dell/ Comments URL: https://news.ycombinator.com/item?id=49223079 Points: 26 # Comments: 6</div>
-    </li>
-    
-    <li class="item" data-source="marginalrevolution"
-        data-text="saturday assorted links marginal revolution 1. possibly ai-written pieces that have won literary awards. 2. huggingface co-founder on what happened, very good post. 3. what do private insurers want from a hormuz agreement? 4. gpt pro on burrito price worries. 5. nova vs. md, once again. 6. do people listen to female economists more? 7. north korea might be growing [&#8230;] the post saturday assorted links appeared first on marginal revolution .">
-      <a class="title" href="https://marginalrevolution.com/marginalrevolution/2026/08/saturday-assorted-links-573.html" target="_blank" rel="noopener noreferrer">Saturday assorted links</a>
-      <div class="byline"><span class="src">Marginal Revolution</span> · 2026-08-08 15:42</div>
-      <div class="summary">1. Possibly AI-written pieces that have won literary awards. 2. HuggingFace co-founder on what happened, very good post. 3. What do private insurers want from a Hormuz agreement? 4. GPT Pro on burrito price worries. 5. NoVa vs. MD, once again. 6. Do people listen to female economists more? 7. North Korea might be growing [&#8230;] The post Saturday assorted links appeared first on Marginal REVOLUTION .</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="message your other claude code sessions hacker news (front page) article url: https://code.claude.com/docs/en/cross-session-messaging comments url: https://news.ycombinator.com/item?id=49222824 points: 14 # comments: 6">
-      <a class="title" href="https://code.claude.com/docs/en/cross-session-messaging" target="_blank" rel="noopener noreferrer">Message your other Claude Code sessions</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-08 15:34</div>
-      <div class="summary">Article URL: https://code.claude.com/docs/en/cross-session-messaging Comments URL: https://news.ycombinator.com/item?id=49222824 Points: 14 # Comments: 6</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text=""code was never the hard part" is an insult to all programmers hacker news (front page) article url: https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers comments url: https://news.ycombinator.com/item?id=49222189 points: 11 # comments: 4">
-      <a class="title" href="https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers" target="_blank" rel="noopener noreferrer">"Code was never the hard part" is an insult to all programmers</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-08 14:32</div>
-      <div class="summary">Article URL: https://blog.senko.net/code-was-never-the-hard-part-is-an-insult-to-all-programmers Comments URL: https://news.ycombinator.com/item?id=49222189 Points: 11 # Comments: 4</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="sensitive info goes into 'no reply' emails constantly. this guy sees it all hacker news (front page) article url: https://www.wired.com/story/sensitive-info-goes-into-no-reply-emails-constantly-this-guy-sees-it-all/ comments url: https://news.ycombinator.com/item?id=49221947 points: 17 # comments: 3">
-      <a class="title" href="https://www.wired.com/story/sensitive-info-goes-into-no-reply-emails-constantly-this-guy-sees-it-all/" target="_blank" rel="noopener noreferrer">Sensitive Info Goes into 'No Reply' Emails Constantly. This Guy Sees It All</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-08-08 14:07</div>
-      <div class="summary">Article URL: https://www.wired.com/story/sensitive-info-goes-into-no-reply-emails-constantly-this-guy-sees-it-all/ Comments URL: https://news.ycombinator.com/item?id=49221947 Points: 17 # Comments: 3</div>
     </li>
     
   </ul>
