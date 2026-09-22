@@ -41,7 +41,7 @@
 <div class="wrap">
   <header>
     <h1>AI News</h1>
-    <div class="meta">400 items · updated 2026-09-21 21:03 UTC</div>
+    <div class="meta">400 items · updated 2026-09-22 00:05 UTC</div>
   </header>
 
   <div class="toolbar">
@@ -77,7 +77,7 @@
       Hacker News (AI/LLM) <span class="count">(192)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="hn_frontpage" checked>
-      Hacker News (front page) <span class="count">(4337)</span></label>
+      Hacker News (front page) <span class="count">(4341)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="huggingface" checked>
       Hugging Face Blog <span class="count">(879)</span></label>
@@ -95,7 +95,7 @@
       OpenAI News <span class="count">(1237)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="simonwillison" checked>
-      Simon Willison's Weblog <span class="count">(267)</span></label>
+      Simon Willison's Weblog <span class="count">(269)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="thebatch" checked>
       The Batch (DeepLearning.AI) <span class="count">(0)</span></label>
@@ -103,6 +103,48 @@
   </div>
 
   <ul class="items" id="list">
+    
+    <li class="item" data-source="simonwillison"
+        data-text="jev introduces a new shape of llm - system one, aka decision models simon willison's weblog last week typesafe ai unveiled jev , their first example of a new category of model that they are calling "system one models" (i'm with maggie appleton, i think "decision models" is a better name for these). jev is an interesting variant on the usual llm format: it still accepts text inputs, but instead of text output it returns floating point numbers corresponding to categories, yes/no questions, ratings, and associated confidence scores. typesafe describe jev like this: think of jev as a frontier-intelligence function call: unstructured state in, typed probabilistic decisions out. it's also ">
+      <a class="title" href="https://simonwillison.net/2026/Sep/21/jev/" target="_blank" rel="noopener noreferrer">Jev introduces a new shape of LLM - System One, aka Decision Models</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-09-21 23:09</div>
+      <div class="summary">Last week TypeSafe AI unveiled Jev , their first example of a new category of model that they are calling "System One models" (I'm with Maggie Appleton, I think "decision models" is a better name for these). Jev is an interesting variant on the usual LLM format: it still accepts text inputs, but instead of text output it returns floating point numbers corresponding to categories, yes/no questions, ratings, and associated confidence scores. TypeSafe describe Jev like this: Think of Jev as a frontier-intelligence function call: unstructured state in, typed probabilistic decisions out. It's also </div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="spymarks, not watermarks hacker news (front page) article url: https://brand.io/article/spymarks/ comments url: https://news.ycombinator.com/item?id=49794615 points: 17 # comments: 6">
+      <a class="title" href="https://brand.io/article/spymarks/" target="_blank" rel="noopener noreferrer">Spymarks, Not Watermarks</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-09-21 23:03</div>
+      <div class="summary">Article URL: https://brand.io/article/spymarks/ Comments URL: https://news.ycombinator.com/item?id=49794615 Points: 17 # Comments: 6</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="data protection commission fines google €403m over processing of location data hacker news (front page) article url: https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location comments url: https://news.ycombinator.com/item?id=49794354 points: 48 # comments: 12">
+      <a class="title" href="https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location" target="_blank" rel="noopener noreferrer">Data Protection Commission fines Google €403M over processing of location data</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-09-21 22:33</div>
+      <div class="summary">Article URL: https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-fines-google-eu403-million-following-inquiry-googles-processing-location Comments URL: https://news.ycombinator.com/item?id=49794354 Points: 48 # Comments: 12</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="i don't want to read what you didn't write hacker news (front page) article url: https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/ comments url: https://news.ycombinator.com/item?id=49794330 points: 108 # comments: 35">
+      <a class="title" href="https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/" target="_blank" rel="noopener noreferrer">I don't want to read what you didn't write</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-09-21 22:30</div>
+      <div class="summary">Article URL: https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/ Comments URL: https://news.ycombinator.com/item?id=49794330 Points: 108 # Comments: 35</div>
+    </li>
+    
+    <li class="item" data-source="simonwillison"
+        data-text="cloudflare python workers are now generally available simon willison's weblog cloudflare python workers are now generally available after a two year preview, cloudflare's support for running python code in their server-side workers platform is now stable: "python is now a first-class, fully supported language on the cloudflare developer platform". a neat thing about this is how it works. cloudflare are running python compiled to webassembly via pyodide in their v8-based workerd runtime. this comes with some limitations, documented here - most notably both multiprocessing and threading are non-functional in the webassembly vm. one particularly interesting detail of this ">
+      <a class="title" href="https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/" target="_blank" rel="noopener noreferrer">Cloudflare Python Workers are now generally available</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-09-21 22:25</div>
+      <div class="summary">Cloudflare Python Workers are now generally available After a two year preview, Cloudflare's support for running Python code in their server-side Workers platform is now stable: "Python is now a first-class, fully supported language on the Cloudflare Developer Platform". A neat thing about this is how it works. Cloudflare are running Python compiled to WebAssembly via Pyodide in their V8-based workerd runtime. This comes with some limitations, documented here - most notably both multiprocessing and threading are non-functional in the WebAssembly VM. One particularly interesting detail of this </div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="suspension of the de minimis administrative exemption for imports $800 or less hacker news (front page) https://www.federalregister.gov/documents/2026/06/24/2026-12... comments url: https://news.ycombinator.com/item?id=49793322 points: 109 # comments: 66">
+      <a class="title" href="https://www.personalimportation.org/advocacy" target="_blank" rel="noopener noreferrer">Suspension of the de minimis administrative exemption for imports $800 or less</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-09-21 20:58</div>
+      <div class="summary">https://www.federalregister.gov/documents/2026/06/24/2026-12... Comments URL: https://news.ycombinator.com/item?id=49793322 Points: 109 # Comments: 66</div>
+    </li>
     
     <li class="item" data-source="hn_frontpage"
         data-text="xiaomi mimo v2.6 hacker news (front page) article url: https://mimo.xiaomi.com/mimo-v2-6 comments url: https://news.ycombinator.com/item?id=49792730 points: 147 # comments: 47">
@@ -350,17 +392,17 @@
     </li>
     
     <li class="item" data-source="openai"
-        data-text="higgsfield ai ships new video features in a day with gpt-6 astra openai news with gpt-6 astra, higgsfield ai makes video ad creation easier for small businesses and brings new creative tools to market faster.">
-      <a class="title" href="https://openai.com/index/higgsfield-from-prompt-to-production-with-astra" target="_blank" rel="noopener noreferrer">Higgsfield AI ships new video features in a day with GPT-6 Astra</a>
-      <div class="byline"><span class="src">OpenAI News</span> · 2026-09-21 12:00</div>
-      <div class="summary">With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.</div>
-    </li>
-    
-    <li class="item" data-source="openai"
         data-text="advisory group on mathematics and artificial intelligence openai news openai is working with an independent advisory group on mathematics and artificial intelligence to guide the review and communication of emerging ai results.">
       <a class="title" href="https://openai.com/index/advisory-group-on-mathematics-and-ai" target="_blank" rel="noopener noreferrer">Advisory Group on Mathematics and Artificial Intelligence</a>
       <div class="byline"><span class="src">OpenAI News</span> · 2026-09-21 12:00</div>
       <div class="summary">OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results.</div>
+    </li>
+    
+    <li class="item" data-source="openai"
+        data-text="higgsfield ai ships new video features in a day with gpt-6 astra openai news with gpt-6 astra, higgsfield ai makes video ad creation easier for small businesses and brings new creative tools to market faster.">
+      <a class="title" href="https://openai.com/index/higgsfield-from-prompt-to-production-with-astra" target="_blank" rel="noopener noreferrer">Higgsfield AI ships new video features in a day with GPT-6 Astra</a>
+      <div class="byline"><span class="src">OpenAI News</span> · 2026-09-21 12:00</div>
+      <div class="summary">With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.</div>
     </li>
     
     <li class="item" data-source="interconnects"
@@ -482,18 +524,18 @@
       <div class="summary">Article URL: https://gregorygundersen.com/blog/2018/04/15/backprop/ Comments URL: https://news.ycombinator.com/item?id=49781693 Points: 18 # Comments: 4</div>
     </li>
     
-    <li class="item" data-source="openai"
-        data-text="how v7 gives ai agents institutional memory openai news using gpt-5.6, v7 turns scattered company files into context agents can use to complete complex, source-linked work.">
-      <a class="title" href="https://openai.com/index/v7" target="_blank" rel="noopener noreferrer">How V7 gives AI agents institutional memory</a>
-      <div class="byline"><span class="src">OpenAI News</span> · 2026-09-21 00:00</div>
-      <div class="summary">Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.</div>
-    </li>
-    
     <li class="item" data-source="huggingface"
         data-text="tokenizers v1: encode, decode and scaling, measured hugging face blog ">
       <a class="title" href="https://huggingface.co/blog/tokenizers-v1" target="_blank" rel="noopener noreferrer">tokenizers v1: encode, decode and scaling, measured</a>
       <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-09-21 00:00</div>
       
+    </li>
+    
+    <li class="item" data-source="openai"
+        data-text="how v7 gives ai agents institutional memory openai news using gpt-5.6, v7 turns scattered company files into context agents can use to complete complex, source-linked work.">
+      <a class="title" href="https://openai.com/index/v7" target="_blank" rel="noopener noreferrer">How V7 gives AI agents institutional memory</a>
+      <div class="byline"><span class="src">OpenAI News</span> · 2026-09-21 00:00</div>
+      <div class="summary">Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -2387,17 +2429,17 @@
     </li>
     
     <li class="item" data-source="openai"
-        data-text="hex turns complex analysis into visual reports with gpt‑6 astra openai news gpt-6 astra helps hex’s data agents turn answers into interactive visualizations that employees are proud to share.">
-      <a class="title" href="https://openai.com/index/hex-gpt-6-astra" target="_blank" rel="noopener noreferrer">Hex turns complex analysis into visual reports with GPT‑6 Astra</a>
-      <div class="byline"><span class="src">OpenAI News</span> · 2026-09-16 12:00</div>
-      <div class="summary">GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share.</div>
-    </li>
-    
-    <li class="item" data-source="openai"
         data-text="how to connect ai usage to business value openai news learn how chatgpt work and codex analytics help teams understand ai usage and spend, identify training needs, and connect adoption to business outcomes.">
       <a class="title" href="https://openai.com/index/how-to-connect-ai-usage-to-business-value" target="_blank" rel="noopener noreferrer">How to connect AI usage to business value</a>
       <div class="byline"><span class="src">OpenAI News</span> · 2026-09-16 12:00</div>
       <div class="summary">Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.</div>
+    </li>
+    
+    <li class="item" data-source="openai"
+        data-text="hex turns complex analysis into visual reports with gpt‑6 astra openai news gpt-6 astra helps hex’s data agents turn answers into interactive visualizations that employees are proud to share.">
+      <a class="title" href="https://openai.com/index/hex-gpt-6-astra" target="_blank" rel="noopener noreferrer">Hex turns complex analysis into visual reports with GPT‑6 Astra</a>
+      <div class="byline"><span class="src">OpenAI News</span> · 2026-09-16 12:00</div>
+      <div class="summary">GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share.</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -2860,48 +2902,6 @@
       <a class="title" href="https://www.bbc.com/news/articles/c8ly49w9g1edo" target="_blank" rel="noopener noreferrer">Suspected sabotage causes major Netherlands rail disruption</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-09-15 10:22</div>
       <div class="summary">Article URL: https://www.bbc.com/news/articles/c8ly49w9g1edo Comments URL: https://news.ycombinator.com/item?id=49710253 Points: 246 # Comments: 235</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="let's make quality the norm again hacker news (front page) article url: https://www.forbrukerradet.no/short-life/ comments url: https://news.ycombinator.com/item?id=49710109 points: 164 # comments: 153">
-      <a class="title" href="https://www.forbrukerradet.no/short-life/" target="_blank" rel="noopener noreferrer">Let's make quality the norm again</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-09-15 10:00</div>
-      <div class="summary">Article URL: https://www.forbrukerradet.no/short-life/ Comments URL: https://news.ycombinator.com/item?id=49710109 Points: 164 # Comments: 153</div>
-    </li>
-    
-    <li class="item" data-source="hn_ai"
-        data-text="how much of f-droid is llm generated? hacker news (ai/llm) article url: https://tintotint.eu/whacky-corner/f-droid_slop/ comments url: https://news.ycombinator.com/item?id=49710015 points: 73 # comments: 88">
-      <a class="title" href="https://tintotint.eu/whacky-corner/f-droid_slop/" target="_blank" rel="noopener noreferrer">How much of F-Droid is LLM generated?</a>
-      <div class="byline"><span class="src">Hacker News (AI/LLM)</span> · 2026-09-15 09:47</div>
-      <div class="summary">Article URL: https://tintotint.eu/whacky-corner/f-droid_slop/ Comments URL: https://news.ycombinator.com/item?id=49710015 Points: 73 # Comments: 88</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="alternatives to minio for single-node local s3 hacker news (front page) article url: https://rmoff.net/2026/01/14/alternatives-to-minio-for-single-node-local-s3/ comments url: https://news.ycombinator.com/item?id=49709381 points: 100 # comments: 51">
-      <a class="title" href="https://rmoff.net/2026/01/14/alternatives-to-minio-for-single-node-local-s3/" target="_blank" rel="noopener noreferrer">Alternatives to MinIO for single-node local S3</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-09-15 08:21</div>
-      <div class="summary">Article URL: https://rmoff.net/2026/01/14/alternatives-to-minio-for-single-node-local-s3/ Comments URL: https://news.ycombinator.com/item?id=49709381 Points: 100 # Comments: 51</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="the k-server conjecture is true hacker news (front page) article url: https://arxiv.org/abs/2609.15979 comments url: https://news.ycombinator.com/item?id=49709129 points: 53 # comments: 19">
-      <a class="title" href="https://arxiv.org/abs/2609.15979" target="_blank" rel="noopener noreferrer">The k-server conjecture is true</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-09-15 07:45</div>
-      <div class="summary">Article URL: https://arxiv.org/abs/2609.15979 Comments URL: https://news.ycombinator.com/item?id=49709129 Points: 53 # Comments: 19</div>
-    </li>
-    
-    <li class="item" data-source="marginalrevolution"
-        data-text="those new service sector jobs marginal revolution horwitz is in the business of playing a version of mom for local college students. concierge companies offering student support have existed for decades. but in recent years, a new crop of upstarts — such as horwitz’s company, mindyknows; the bama mama in alabama; the ga mom in georgia; and campus mom in texas — have [&#8230;] the post those new service sector jobs appeared first on marginal revolution .">
-      <a class="title" href="https://marginalrevolution.com/marginalrevolution/2026/09/those-new-service-sector-jobs-17.html" target="_blank" rel="noopener noreferrer">Those new service sector jobs</a>
-      <div class="byline"><span class="src">Marginal Revolution</span> · 2026-09-15 07:33</div>
-      <div class="summary">Horwitz is in the business of playing a version of mom for local college students. Concierge companies offering student support have existed for decades. But in recent years, a new crop of upstarts — such as Horwitz’s company, MindyKnows; the Bama Mama in Alabama; the GA Mom in Georgia; and Campus Mom in Texas — have [&#8230;] The post Those new service sector jobs appeared first on Marginal REVOLUTION .</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="css-tricks in limbo hacker news (front page) article url: https://vale.rocks/micros/20260915-0135 comments url: https://news.ycombinator.com/item?id=49708993 points: 115 # comments: 38">
-      <a class="title" href="https://vale.rocks/micros/20260915-0135" target="_blank" rel="noopener noreferrer">CSS-Tricks in Limbo</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-09-15 07:27</div>
-      <div class="summary">Article URL: https://vale.rocks/micros/20260915-0135 Comments URL: https://news.ycombinator.com/item?id=49708993 Points: 115 # Comments: 38</div>
     </li>
     
   </ul>
