@@ -41,7 +41,7 @@
 <div class="wrap">
   <header>
     <h1>AI News</h1>
-    <div class="meta">400 items · updated 2026-10-18 00:04 UTC</div>
+    <div class="meta">400 items · updated 2026-10-18 04:28 UTC</div>
   </header>
 
   <div class="toolbar">
@@ -77,7 +77,7 @@
       Hacker News (AI/LLM) <span class="count">(266)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="hn_frontpage" checked>
-      Hacker News (front page) <span class="count">(5505)</span></label>
+      Hacker News (front page) <span class="count">(5507)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="huggingface" checked>
       Hugging Face Blog <span class="count">(908)</span></label>
@@ -95,7 +95,7 @@
       OpenAI News <span class="count">(1321)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="simonwillison" checked>
-      Simon Willison's Weblog <span class="count">(342)</span></label>
+      Simon Willison's Weblog <span class="count">(344)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="thebatch" checked>
       The Batch (DeepLearning.AI) <span class="count">(0)</span></label>
@@ -103,6 +103,13 @@
   </div>
 
   <ul class="items" id="list">
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="ny announces game ownership bill requiring ownership rather than licensing hacker news (front page) article url: https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends comments url: https://news.ycombinator.com/item?id=50136536 points: 146 # comments: 37">
+      <a class="title" href="https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends" target="_blank" rel="noopener noreferrer">NY announces game ownership bill requiring ownership rather than licensing</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-18 00:14</div>
+      <div class="summary">Article URL: https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends Comments URL: https://news.ycombinator.com/item?id=50136536 Points: 146 # Comments: 37</div>
+    </li>
     
     <li class="item" data-source="hn_frontpage"
         data-text="retired penn professor arrested for blocking uber eats robot hacker news (front page) article url: https://www.phillyvoice.com/philly-woman-arrested-uber-eats-robot-protest/?l comments url: https://news.ycombinator.com/item?id=50136198 points: 34 # comments: 24">
@@ -116,6 +123,13 @@
       <a class="title" href="https://openjdk.org/projects/jdk/28/" target="_blank" rel="noopener noreferrer">JDK 28</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-17 21:37</div>
       <div class="summary">Article URL: https://openjdk.org/projects/jdk/28/ Comments URL: https://news.ycombinator.com/item?id=50135379 Points: 34 # Comments: 10</div>
+    </li>
+    
+    <li class="item" data-source="simonwillison"
+        data-text="inline rendering with document​.currentscript simon willison's weblog inline rendering with document​.currentscript lean rada describes a neat trick that takes advantage of the document.currentscript property. you can use that to drop in a tiny inline &lt;script&gt; element that replaces itself when the page loads: the year is &lt;script&gt; document.currentscript.replacewith( new date().getfullyear())&lt;/script&gt; if you define a shortcut function like this: $=(...n)=&gt;document.currentscript.replacewith(...n) you get a tiny template language: the year is &lt;script&gt;$(new date().getfullyear())&lt;/script&gt; tags: javascript">
+      <a class="title" href="https://simonwillison.net/2026/Oct/17/document-currentscript/" target="_blank" rel="noopener noreferrer">Inline rendering with document​.currentScript</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-10-17 21:11</div>
+      <div class="summary">Inline rendering with document​.currentScript Lean Rada describes a neat trick that takes advantage of the document.currentScript property. You can use that to drop in a tiny inline &lt;script&gt; element that replaces itself when the page loads: The year is &lt;script&gt; document.currentScript.replaceWith( new Date().getFullYear())&lt;/script&gt; If you define a shortcut function like this: $=(...n)=&gt;document.currentScript.replaceWith(...n) You get a tiny template language: The year is &lt;script&gt;$(new Date().getFullYear())&lt;/script&gt; Tags: javascript</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -249,6 +263,20 @@
       <a class="title" href="https://celphase.github.io/duck-pond/" target="_blank" rel="noopener noreferrer">Show HN: High-quality duck audio synthesizer</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-17 13:28</div>
       <div class="summary">Article URL: https://celphase.github.io/duck-pond/ Comments URL: https://news.ycombinator.com/item?id=50131006 Points: 29 # Comments: 5</div>
+    </li>
+    
+    <li class="item" data-source="simonwillison"
+        data-text="web-edit 0.1a2 simon willison's weblog release: web-edit 0.1a2 web-edit ( previously ) is my tiny web app for browsing and editing files in a folder. i mainly built it for editing files on different machines via tailscale. i added a "copy to clipboard" option for both text and image data. i needed this because i was running pelican prompts on a laptop from my phone (here's deepseek 4.1 flash 1017 ) and i wanted an easy way to copy the resulting logs into a gist. tags: projects , pelican-riding-a-bicycle , deepseek">
+      <a class="title" href="https://simonwillison.net/2026/Oct/17/web-edit/" target="_blank" rel="noopener noreferrer">web-edit 0.1a2</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-10-17 13:16</div>
+      <div class="summary">Release: web-edit 0.1a2 web-edit ( previously ) is my tiny web app for browsing and editing files in a folder. I mainly built it for editing files on different machines via Tailscale. I added a "copy to clipboard" option for both text and image data. I needed this because I was running pelican prompts on a laptop from my phone (here's DeepSeek 4.1 Flash 1017 ) and I wanted an easy way to copy the resulting logs into a Gist. Tags: projects , pelican-riding-a-bicycle , deepseek</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="interactive linear programming in the browser hacker news (front page) article url: https://lpviz.net/ comments url: https://news.ycombinator.com/item?id=50130379 points: 3 # comments: 0">
+      <a class="title" href="https://lpviz.net/" target="_blank" rel="noopener noreferrer">Interactive Linear Programming in the Browser</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-17 12:06</div>
+      <div class="summary">Article URL: https://lpviz.net/ Comments URL: https://news.ycombinator.com/item?id=50130379 Points: 3 # Comments: 0</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -769,6 +797,13 @@
       <div class="summary">Article URL: https://ipinfo.io/blog/rpki-protects-70-internet-routes Comments URL: https://news.ycombinator.com/item?id=50112330 Points: 78 # Comments: 23</div>
     </li>
     
+    <li class="item" data-source="huggingface"
+        data-text="welcome beam: a 501b open model you can own, customize, and scale hugging face blog ">
+      <a class="title" href="https://huggingface.co/blog/reflection-beam" target="_blank" rel="noopener noreferrer">Welcome Beam: a 501B open model you can own, customize, and scale</a>
+      <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-10-16 00:00</div>
+      
+    </li>
+    
     <li class="item" data-source="openai"
         data-text="stack overflow for agents triples signups with chatgpt plugin openai news two engineers shipped stack overflow for agents in a few weeks with codex, and its chatgpt plugin helped drive up to 10× growth in agent creation.">
       <a class="title" href="https://openai.com/index/stack-overflow-chatgpt-plugin" target="_blank" rel="noopener noreferrer">Stack Overflow for Agents triples signups with ChatGPT plugin</a>
@@ -781,13 +816,6 @@
       <a class="title" href="https://openai.com/index/benefit-street-partners" target="_blank" rel="noopener noreferrer">Benefit Street Partners answers questions faster with Codex</a>
       <div class="byline"><span class="src">OpenAI News</span> · 2026-10-16 00:00</div>
       <div class="summary">Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.</div>
-    </li>
-    
-    <li class="item" data-source="huggingface"
-        data-text="welcome beam: a 501b open model you can own, customize, and scale hugging face blog ">
-      <a class="title" href="https://huggingface.co/blog/reflection-beam" target="_blank" rel="noopener noreferrer">Welcome Beam: a 501B open model you can own, customize, and scale</a>
-      <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-10-16 00:00</div>
-      
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -1147,6 +1175,13 @@
       <div class="summary">Article URL: https://blog.demofox.org/2026/10/03/the-double-headed-stack-allocator/ Comments URL: https://news.ycombinator.com/item?id=50098274 Points: 38 # Comments: 10</div>
     </li>
     
+    <li class="item" data-source="openai"
+        data-text="sullivan & cromwell brings legal expertise into agreement review openai news in collaboration with openai, sullivan & cromwell developed agreement analyzer, an ai tool for identifying issues in a draft agreement.">
+      <a class="title" href="https://openai.com/index/sullivan-cromwell" target="_blank" rel="noopener noreferrer">Sullivan & Cromwell brings legal expertise into agreement review</a>
+      <div class="byline"><span class="src">OpenAI News</span> · 2026-10-15 00:00</div>
+      <div class="summary">In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.</div>
+    </li>
+    
     <li class="item" data-source="huggingface"
         data-text="welcome flux.3 image klein in diffusers hugging face blog ">
       <a class="title" href="https://huggingface.co/blog/flux-3" target="_blank" rel="noopener noreferrer">Welcome FLUX.3 Image Klein in Diffusers</a>
@@ -1159,13 +1194,6 @@
       <a class="title" href="https://huggingface.co/blog/meta-muse-spark-open" target="_blank" rel="noopener noreferrer">Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta</a>
       <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-10-15 00:00</div>
       
-    </li>
-    
-    <li class="item" data-source="openai"
-        data-text="sullivan & cromwell brings legal expertise into agreement review openai news in collaboration with openai, sullivan & cromwell developed agreement analyzer, an ai tool for identifying issues in a draft agreement.">
-      <a class="title" href="https://openai.com/index/sullivan-cromwell" target="_blank" rel="noopener noreferrer">Sullivan & Cromwell brings legal expertise into agreement review</a>
-      <div class="byline"><span class="src">OpenAI News</span> · 2026-10-15 00:00</div>
-      <div class="summary">In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -1512,17 +1540,17 @@
     </li>
     
     <li class="item" data-source="openai"
-        data-text="sentinelone cuts malware analysis from weeks to hours openai news with openai daybreak, sentinelone cuts weeks of malware analysis to hours, creating capacity to investigate more threats.">
-      <a class="title" href="https://openai.com/index/sentinelone" target="_blank" rel="noopener noreferrer">SentinelOne cuts malware analysis from weeks to hours</a>
-      <div class="byline"><span class="src">OpenAI News</span> · 2026-10-14 12:00</div>
-      <div class="summary">With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.</div>
-    </li>
-    
-    <li class="item" data-source="openai"
         data-text="amp puts ai agents to work beyond code with openai models openai news see how amp pushes the frontier of what agents can do with gpt-6 astra, ultrafast, gpt-live-1, and sign in with chatgpt.">
       <a class="title" href="https://openai.com/index/amp-beyond-coding" target="_blank" rel="noopener noreferrer">Amp puts AI agents to work beyond code with OpenAI models</a>
       <div class="byline"><span class="src">OpenAI News</span> · 2026-10-14 12:00</div>
       <div class="summary">See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.</div>
+    </li>
+    
+    <li class="item" data-source="openai"
+        data-text="sentinelone cuts malware analysis from weeks to hours openai news with openai daybreak, sentinelone cuts weeks of malware analysis to hours, creating capacity to investigate more threats.">
+      <a class="title" href="https://openai.com/index/sentinelone" target="_blank" rel="noopener noreferrer">SentinelOne cuts malware analysis from weeks to hours</a>
+      <div class="byline"><span class="src">OpenAI News</span> · 2026-10-14 12:00</div>
+      <div class="summary">With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -2302,18 +2330,18 @@
       <div class="summary">Article URL: https://blog.ericgoldman.org/archives/2026/10/my-reddit-ama-on-the-law-of-web-scraping.htm Comments URL: https://news.ycombinator.com/item?id=50060296 Points: 34 # Comments: 5</div>
     </li>
     
-    <li class="item" data-source="hn_ai"
-        data-text="'ai' is not a tool by rich hickey hacker news (ai/llm) https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b1... comments url: https://news.ycombinator.com/item?id=50060269 points: 223 # comments: 112">
-      <a class="title" href="https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e" target="_blank" rel="noopener noreferrer">'AI' Is Not a Tool by Rich Hickey</a>
-      <div class="byline"><span class="src">Hacker News (AI/LLM)</span> · 2026-10-12 18:00</div>
-      <div class="summary">https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b1... Comments URL: https://news.ycombinator.com/item?id=50060269 Points: 223 # Comments: 112</div>
-    </li>
-    
     <li class="item" data-source="hn_frontpage"
         data-text="'ai' is not a tool by rich hickey hacker news (front page) article url: https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b11c02 comments url: https://news.ycombinator.com/item?id=50060269 points: 35 # comments: 11">
       <a class="title" href="https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b11c02" target="_blank" rel="noopener noreferrer">'AI' Is Not a Tool by Rich Hickey</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-12 18:00</div>
       <div class="summary">Article URL: https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b11c02 Comments URL: https://news.ycombinator.com/item?id=50060269 Points: 35 # Comments: 11</div>
+    </li>
+    
+    <li class="item" data-source="hn_ai"
+        data-text="'ai' is not a tool by rich hickey hacker news (ai/llm) https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b1... comments url: https://news.ycombinator.com/item?id=50060269 points: 223 # comments: 112">
+      <a class="title" href="https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e" target="_blank" rel="noopener noreferrer">'AI' Is Not a Tool by Rich Hickey</a>
+      <div class="byline"><span class="src">Hacker News (AI/LLM)</span> · 2026-10-12 18:00</div>
+      <div class="summary">https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b1... Comments URL: https://news.ycombinator.com/item?id=50060269 Points: 223 # Comments: 112</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -2874,34 +2902,6 @@
       <a class="title" href="https://nitter.net" target="_blank" rel="noopener noreferrer">Nitter: Update Oct 10th seeking funding and legal help</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-11 10:37</div>
       <div class="summary">Article URL: https://nitter.net Comments URL: https://news.ycombinator.com/item?id=50041682 Points: 199 # Comments: 71</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="sudden drop in cloudflare bot traffic after strike on yandex datacenter hacker news (front page) article url: https://radar.cloudflare.com/bots/as13238?daterange=7d comments url: https://news.ycombinator.com/item?id=50041619 points: 354 # comments: 134">
-      <a class="title" href="https://radar.cloudflare.com/bots/as13238?dateRange=7d" target="_blank" rel="noopener noreferrer">Sudden drop in Cloudflare bot traffic after strike on Yandex datacenter</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-11 10:27</div>
-      <div class="summary">Article URL: https://radar.cloudflare.com/bots/as13238?dateRange=7d Comments URL: https://news.ycombinator.com/item?id=50041619 Points: 354 # Comments: 134</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="ircv3 hacker news (front page) article url: https://ircv3.net/ comments url: https://news.ycombinator.com/item?id=50041540 points: 146 # comments: 139">
-      <a class="title" href="https://ircv3.net/" target="_blank" rel="noopener noreferrer">IRCv3</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-11 10:11</div>
-      <div class="summary">Article URL: https://ircv3.net/ Comments URL: https://news.ycombinator.com/item?id=50041540 Points: 146 # Comments: 139</div>
-    </li>
-    
-    <li class="item" data-source="marginalrevolution"
-        data-text="what should i ask fuchsia dunlop? marginal revolution yes i will be doing a fourth (!) conversation with her, based in part on her forthcoming book five tastes: delicious recipes for chinese flavors. i am sure it is excellent, and will read it very soon. her works are not just great cookbooks, they are among the best books period. here are my previous [&#8230;] the post what should i ask fuchsia dunlop? appeared first on marginal revolution .">
-      <a class="title" href="https://marginalrevolution.com/marginalrevolution/2026/10/what-should-i-ask-fuchsia-dunlop-2.html" target="_blank" rel="noopener noreferrer">What should I ask Fuchsia Dunlop?</a>
-      <div class="byline"><span class="src">Marginal Revolution</span> · 2026-10-11 08:52</div>
-      <div class="summary">Yes I will be doing a fourth (!) Conversation with her, based in part on her forthcoming book Five Tastes: Delicious Recipes for Chinese Flavors. I am sure it is excellent, and will read it very soon. Her works are not just great cookbooks, they are among the best books period. Here are my previous [&#8230;] The post What should I ask Fuchsia Dunlop? appeared first on Marginal REVOLUTION .</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="3rd yandex cloud data center was hit hacker news (front page) article url: https://status.yandex.cloud/en/incidents/2136 comments url: https://news.ycombinator.com/item?id=50040547 points: 318 # comments: 386">
-      <a class="title" href="https://status.yandex.cloud/en/incidents/2136" target="_blank" rel="noopener noreferrer">3rd Yandex Cloud Data Center Was Hit</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-11 07:34</div>
-      <div class="summary">Article URL: https://status.yandex.cloud/en/incidents/2136 Comments URL: https://news.ycombinator.com/item?id=50040547 Points: 318 # Comments: 386</div>
     </li>
     
   </ul>
