@@ -41,7 +41,7 @@
 <div class="wrap">
   <header>
     <h1>AI News</h1>
-    <div class="meta">400 items · updated 2026-10-18 23:09 UTC</div>
+    <div class="meta">400 items · updated 2026-10-19 01:14 UTC</div>
   </header>
 
   <div class="toolbar">
@@ -77,7 +77,7 @@
       Hacker News (AI/LLM) <span class="count">(266)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="hn_frontpage" checked>
-      Hacker News (front page) <span class="count">(5546)</span></label>
+      Hacker News (front page) <span class="count">(5551)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="huggingface" checked>
       Hugging Face Blog <span class="count">(908)</span></label>
@@ -95,7 +95,7 @@
       OpenAI News <span class="count">(1321)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="simonwillison" checked>
-      Simon Willison's Weblog <span class="count">(344)</span></label>
+      Simon Willison's Weblog <span class="count">(346)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="thebatch" checked>
       The Batch (DeepLearning.AI) <span class="count">(0)</span></label>
@@ -103,6 +103,34 @@
   </div>
 
   <ul class="items" id="list">
+    
+    <li class="item" data-source="simonwillison"
+        data-text="llm-tools-datasette 0.1.1 simon willison's weblog release: llm-tools-datasette 0.1.1 when i switched llm over to httpx2 in llm 0.33 i forget that this would break any plugins which used httpx without directly depending on it. llm-tools-datasette was one of those plugins, now fixed. tags: datasette , llm">
+      <a class="title" href="https://simonwillison.net/2026/Oct/18/llm-tools-datasette/" target="_blank" rel="noopener noreferrer">llm-tools-datasette 0.1.1</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-10-18 23:43</div>
+      <div class="summary">Release: llm-tools-datasette 0.1.1 When I switched LLM over to httpx2 in LLM 0.33 I forget that this would break any plugins which used httpx without directly depending on it. llm-tools-datasette was one of those plugins, now fixed. Tags: datasette , llm</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="william gibson and the trademarking of cyberspace hacker news (front page) article url: https://colo.to/cyberspace.html comments url: https://news.ycombinator.com/item?id=50146625 points: 29 # comments: 0">
+      <a class="title" href="https://colo.to/cyberspace.html" target="_blank" rel="noopener noreferrer">William Gibson and the trademarking of cyberspace</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-18 23:37</div>
+      <div class="summary">Article URL: https://colo.to/cyberspace.html Comments URL: https://news.ycombinator.com/item?id=50146625 Points: 29 # Comments: 0</div>
+    </li>
+    
+    <li class="item" data-source="simonwillison"
+        data-text="llm-echo 0.5 simon willison's weblog release: llm-echo 0.5 i'm working towards a new llm release, and testing prs caused me to revisit the llm-echo debug plugin. this plugin provides a "model" which doesn't involve an llm at all - it just repeats back the prompts that have been fed to it. the new release now updates the simulated token usage counts to take tool calls, system prompts, and reasoning tokens into account. example usage: uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage outputs: first i consider the prompt, then i decide what to say. { "prompt": "hi there", "system": "", "attachments": [], "stream": tru">
+      <a class="title" href="https://simonwillison.net/2026/Oct/18/llm-echo/" target="_blank" rel="noopener noreferrer">llm-echo 0.5</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-10-18 23:16</div>
+      <div class="summary">Release: llm-echo 0.5 I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a "model" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reasoning tokens into account. Example usage: uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage Outputs: First I consider the prompt, then I decide what to say. { "prompt": "hi there", "system": "", "attachments": [], "stream": tru</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="how rc2's π table was made hacker news (front page) article url: https://khalidhamadeh.com/writing/rc2-pi-table comments url: https://news.ycombinator.com/item?id=50146286 points: 5 # comments: 1">
+      <a class="title" href="https://khalidhamadeh.com/writing/rc2-pi-table" target="_blank" rel="noopener noreferrer">How RC2's π table was made</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-18 22:48</div>
+      <div class="summary">Article URL: https://khalidhamadeh.com/writing/rc2-pi-table Comments URL: https://news.ycombinator.com/item?id=50146286 Points: 5 # Comments: 1</div>
+    </li>
     
     <li class="item" data-source="marginalrevolution"
         data-text="*you can see everything* (no spoilers) marginal revolution an excellent and also original movie, you all should see it. there are different interpretations, but i read it as a story between two autistic people, and the bond they have but also the great difficulties they have in understanding each other, because they are so very different. i am not saying that is what [&#8230;] the post *you can see everything* (no spoilers) appeared first on marginal revolution .">
@@ -123,6 +151,13 @@
       <a class="title" href="https://github.com/omnipty-terminal/omnipty" target="_blank" rel="noopener noreferrer">Show HN: OmniPTY – Opinionated terminal emulator for macOS and Linux</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-18 21:24</div>
       <div class="summary">Article URL: https://github.com/omnipty-terminal/omnipty Comments URL: https://news.ycombinator.com/item?id=50145628 Points: 4 # Comments: 0</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="if you don't run your own llm proxy, how do you know whats going on? hacker news (front page) article url: https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/ comments url: https://news.ycombinator.com/item?id=50145507 points: 11 # comments: 4">
+      <a class="title" href="https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/" target="_blank" rel="noopener noreferrer">If you don't run your own LLM proxy, how do you know whats going on?</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-18 21:09</div>
+      <div class="summary">Article URL: https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/ Comments URL: https://news.ycombinator.com/item?id=50145507 Points: 11 # Comments: 4</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -172,6 +207,13 @@
       <a class="title" href="https://github.com/ardiri/palmos-lemmings" target="_blank" rel="noopener noreferrer">PalmOS Lemmings</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-18 17:56</div>
       <div class="summary">Article URL: https://github.com/ardiri/palmos-lemmings Comments URL: https://news.ycombinator.com/item?id=50143536 Points: 40 # Comments: 7</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="what the heck is /pkg? hacker news (front page) article url: https://anderegg.ca/2026/10/18/what-the-heck-is-pkg comments url: https://news.ycombinator.com/item?id=50143154 points: 9 # comments: 3">
+      <a class="title" href="https://anderegg.ca/2026/10/18/what-the-heck-is-pkg" target="_blank" rel="noopener noreferrer">What the heck is /pkg?</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-18 17:21</div>
+      <div class="summary">Article URL: https://anderegg.ca/2026/10/18/what-the-heck-is-pkg Comments URL: https://news.ycombinator.com/item?id=50143154 Points: 9 # Comments: 3</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -277,6 +319,13 @@
       <a class="title" href="https://www.vals.ai/blogs/impossible-refund" target="_blank" rel="noopener noreferrer">How Far Will AI Assistants Go for a Refund They Can't Get?</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-18 12:22</div>
       <div class="summary">Article URL: https://www.vals.ai/blogs/impossible-refund Comments URL: https://news.ycombinator.com/item?id=50140462 Points: 43 # Comments: 24</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="a new way to think about borrow checking (in reverse) hacker news (front page) article url: https://verdagon.dev/blog/reverse-borrow-checking comments url: https://news.ycombinator.com/item?id=50140383 points: 16 # comments: 3">
+      <a class="title" href="https://verdagon.dev/blog/reverse-borrow-checking" target="_blank" rel="noopener noreferrer">A new way to think about borrow checking (in reverse)</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-18 12:11</div>
+      <div class="summary">Article URL: https://verdagon.dev/blog/reverse-borrow-checking Comments URL: https://news.ycombinator.com/item?id=50140383 Points: 16 # Comments: 3</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -1483,18 +1532,18 @@
       
     </li>
     
-    <li class="item" data-source="openai"
-        data-text="sullivan & cromwell brings legal expertise into agreement review openai news in collaboration with openai, sullivan & cromwell developed agreement analyzer, an ai tool for identifying issues in a draft agreement.">
-      <a class="title" href="https://openai.com/index/sullivan-cromwell" target="_blank" rel="noopener noreferrer">Sullivan & Cromwell brings legal expertise into agreement review</a>
-      <div class="byline"><span class="src">OpenAI News</span> · 2026-10-15 00:00</div>
-      <div class="summary">In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.</div>
-    </li>
-    
     <li class="item" data-source="huggingface"
         data-text="welcome flux.3 image klein in diffusers hugging face blog ">
       <a class="title" href="https://huggingface.co/blog/flux-3" target="_blank" rel="noopener noreferrer">Welcome FLUX.3 Image Klein in Diffusers</a>
       <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-10-15 00:00</div>
       
+    </li>
+    
+    <li class="item" data-source="openai"
+        data-text="sullivan & cromwell brings legal expertise into agreement review openai news in collaboration with openai, sullivan & cromwell developed agreement analyzer, an ai tool for identifying issues in a draft agreement.">
+      <a class="title" href="https://openai.com/index/sullivan-cromwell" target="_blank" rel="noopener noreferrer">Sullivan & Cromwell brings legal expertise into agreement review</a>
+      <div class="byline"><span class="src">OpenAI News</span> · 2026-10-15 00:00</div>
+      <div class="summary">In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -1932,17 +1981,17 @@
     </li>
     
     <li class="item" data-source="openai"
-        data-text="how third moment research runs 10,000 agents for 36+ hours openai news with gpt-6 astra and gpt-6.1 sol, codex, and daybreak for cybersecurity, this ai lab builds agents that focus for days and improve with use.">
-      <a class="title" href="https://openai.com/index/third-moment-research" target="_blank" rel="noopener noreferrer">How Third Moment Research runs 10,000 agents for 36+ hours</a>
-      <div class="byline"><span class="src">OpenAI News</span> · 2026-10-14 07:00</div>
-      <div class="summary">With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.</div>
-    </li>
-    
-    <li class="item" data-source="openai"
         data-text="how block is building ai-powered security with openai technology openai news block is building ai-powered security with openai. its security team investigates threats faster and proposes patches in minutes.">
       <a class="title" href="https://openai.com/index/block-ai-powered-security" target="_blank" rel="noopener noreferrer">How Block is building AI-powered security with OpenAI technology</a>
       <div class="byline"><span class="src">OpenAI News</span> · 2026-10-14 07:00</div>
       <div class="summary">Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.</div>
+    </li>
+    
+    <li class="item" data-source="openai"
+        data-text="how third moment research runs 10,000 agents for 36+ hours openai news with gpt-6 astra and gpt-6.1 sol, codex, and daybreak for cybersecurity, this ai lab builds agents that focus for days and improve with use.">
+      <a class="title" href="https://openai.com/index/third-moment-research" target="_blank" rel="noopener noreferrer">How Third Moment Research runs 10,000 agents for 36+ hours</a>
+      <div class="byline"><span class="src">OpenAI News</span> · 2026-10-14 07:00</div>
+      <div class="summary">With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -2853,55 +2902,6 @@
       <a class="title" href="https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html" target="_blank" rel="noopener noreferrer">Type-safe HTML templating in Zig</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-12 05:02</div>
       <div class="summary">Article URL: https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html Comments URL: https://news.ycombinator.com/item?id=50051573 Points: 123 # Comments: 56</div>
-    </li>
-    
-    <li class="item" data-source="simonwillison"
-        data-text="datasette-ports 0.4 simon willison's weblog release: datasette-ports 0.4 my plugin for detecting and listing all datasette instances on the current machine now works with the latest version, and displays the detected pid as well. knowing the pid makes it easier to attach the new python 3.15 profiler . tags: datasette">
-      <a class="title" href="https://simonwillison.net/2026/Oct/12/datasette-ports/" target="_blank" rel="noopener noreferrer">datasette-ports 0.4</a>
-      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-10-12 04:57</div>
-      <div class="summary">Release: datasette-ports 0.4 My plugin for detecting and listing all Datasette instances on the current machine now works with the latest version, and displays the detected PID as well. Knowing the PID makes it easier to attach the new Python 3.15 profiler . Tags: datasette</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="will linux phones become a viable alternative to the android/ios duopoly? hacker news (front page) article url: https://amosbbatto.wordpress.com/2026/10/05/linux-phones-alternative/ comments url: https://news.ycombinator.com/item?id=50051530 points: 154 # comments: 172">
-      <a class="title" href="https://amosbbatto.wordpress.com/2026/10/05/linux-phones-alternative/" target="_blank" rel="noopener noreferrer">Will Linux phones become a viable alternative to the Android/iOS duopoly?</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-12 04:54</div>
-      <div class="summary">Article URL: https://amosbbatto.wordpress.com/2026/10/05/linux-phones-alternative/ Comments URL: https://news.ycombinator.com/item?id=50051530 Points: 154 # Comments: 172</div>
-    </li>
-    
-    <li class="item" data-source="marginalrevolution"
-        data-text="okie-dokie, casey handmer edition marginal revolution i&#8217;ve been prototyping an automated peer review project. with current models you get human level peer review for about $0.10 of tokens. for $5 you can rederive every result, check every statistical inference, and audit every paper cited in both directions. there are about 100m papers in the scientific corpus. most are not important. many [&#8230;] the post okie-dokie, casey handmer edition appeared first on marginal revolution .">
-      <a class="title" href="https://marginalrevolution.com/marginalrevolution/2026/10/okie-dokie-casey-handmer-edition.html" target="_blank" rel="noopener noreferrer">Okie-dokie, Casey Handmer edition</a>
-      <div class="byline"><span class="src">Marginal Revolution</span> · 2026-10-12 04:20</div>
-      <div class="summary">I&#8217;ve been prototyping an automated peer review project. With current models you get human level peer review for about $0.10 of tokens. For $5 you can rederive every result, check every statistical inference, and audit every paper cited in both directions. There are about 100m papers in the scientific corpus. Most are not important. Many [&#8230;] The post Okie-dokie, Casey Handmer edition appeared first on Marginal REVOLUTION .</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="doory – open-source canva hacker news (front page) article url: https://github.com/shaongitbd/doory comments url: https://news.ycombinator.com/item?id=50049872 points: 121 # comments: 45">
-      <a class="title" href="https://github.com/shaongitbd/doory" target="_blank" rel="noopener noreferrer">Doory – Open-Source Canva</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-12 00:48</div>
-      <div class="summary">Article URL: https://github.com/shaongitbd/doory Comments URL: https://news.ycombinator.com/item?id=50049872 Points: 121 # Comments: 45</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="local indexing to reduce tool calling and token usage hacker news (front page) article url: https://tedhaley.ca/pensieve/ comments url: https://news.ycombinator.com/item?id=50049508 points: 20 # comments: 3">
-      <a class="title" href="https://tedhaley.ca/pensieve/" target="_blank" rel="noopener noreferrer">Local Indexing to reduce tool calling and token usage</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-12 00:03</div>
-      <div class="summary">Article URL: https://tedhaley.ca/pensieve/ Comments URL: https://news.ycombinator.com/item?id=50049508 Points: 20 # Comments: 3</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="hashicorp archives the boundary open source repo hacker news (front page) article url: https://github.com/hashicorp/boundary comments url: https://news.ycombinator.com/item?id=50049498 points: 32 # comments: 2">
-      <a class="title" href="https://github.com/hashicorp/boundary" target="_blank" rel="noopener noreferrer">HashiCorp archives the Boundary open source repo</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-12 00:02</div>
-      <div class="summary">Article URL: https://github.com/hashicorp/boundary Comments URL: https://news.ycombinator.com/item?id=50049498 Points: 32 # Comments: 2</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="qt an e2ee post-quantum messenger core in rust (10k connections on 124mb ram hacker news (front page) article url: https://github.com/moral666/qt comments url: https://news.ycombinator.com/item?id=50049425 points: 8 # comments: 1">
-      <a class="title" href="https://github.com/moral666/QT" target="_blank" rel="noopener noreferrer">Qt An E2EE post-quantum messenger core in Rust (10k connections on 124MB RAM</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-11 23:52</div>
-      <div class="summary">Article URL: https://github.com/moral666/QT Comments URL: https://news.ycombinator.com/item?id=50049425 Points: 8 # Comments: 1</div>
     </li>
     
   </ul>
