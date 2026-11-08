@@ -41,7 +41,7 @@
 <div class="wrap">
   <header>
     <h1>AI News</h1>
-    <div class="meta">400 items · updated 2026-11-07 22:43 UTC</div>
+    <div class="meta">400 items · updated 2026-11-08 02:26 UTC</div>
   </header>
 
   <div class="toolbar">
@@ -77,7 +77,7 @@
       Hacker News (AI/LLM) <span class="count">(322)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="hn_frontpage" checked>
-      Hacker News (front page) <span class="count">(6411)</span></label>
+      Hacker News (front page) <span class="count">(6417)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="huggingface" checked>
       Hugging Face Blog <span class="count">(945)</span></label>
@@ -95,7 +95,7 @@
       OpenAI News <span class="count">(1389)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="simonwillison" checked>
-      Simon Willison's Weblog <span class="count">(386)</span></label>
+      Simon Willison's Weblog <span class="count">(387)</span></label>
     
     <label><input type="checkbox" class="src-filter" value="thebatch" checked>
       The Batch (DeepLearning.AI) <span class="count">(0)</span></label>
@@ -103,6 +103,41 @@
   </div>
 
   <ul class="items" id="list">
+    
+    <li class="item" data-source="simonwillison"
+        data-text="datasette #3046: don't serve link: rel=next http headers to firefox for html pages simon willison's weblog datasette #3046: don&#x27;t serve link: rel=next http headers to firefox for html pages i was looking at the firefox network panel today when i noticed that requests to a datasette table page were triggering an http prefetch to the next page of rows in that table. this was happening because datasette pages serve an http link header like this: link: &lt;https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2cd%2cv&gt;; rel="next" this is bad. a tiny fraction of the visitors to one of those pages will click the "next" link, which means their browser is fetching unnecessary dat">
+      <a class="title" href="https://simonwillison.net/2026/Nov/7/link-rel-next/" target="_blank" rel="noopener noreferrer">datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages</a>
+      <div class="byline"><span class="src">Simon Willison's Weblog</span> · 2026-11-07 23:57</div>
+      <div class="summary">datasette #3046: Don&#x27;t serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. This was happening because Datasette pages serve an HTTP link header like this: link: &lt;https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv&gt;; rel="next" This is bad. A tiny fraction of the visitors to one of those pages will click the "next" link, which means their browser is fetching unnecessary dat</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="commodore pet – the worlds first personal computer hacker news (front page) article url: https://www.commodore.ca/commodore-products/commodore-pet-the-worlds-first-personal-computer/ comments url: https://news.ycombinator.com/item?id=50408961 points: 20 # comments: 2">
+      <a class="title" href="https://www.commodore.ca/commodore-products/commodore-pet-the-worlds-first-personal-computer/" target="_blank" rel="noopener noreferrer">Commodore PET – The Worlds First Personal Computer</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-07 23:15</div>
+      <div class="summary">Article URL: https://www.commodore.ca/commodore-products/commodore-pet-the-worlds-first-personal-computer/ Comments URL: https://news.ycombinator.com/item?id=50408961 Points: 20 # Comments: 2</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="github new pull request overview page in public preview hacker news (front page) article url: https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/ comments url: https://news.ycombinator.com/item?id=50408931 points: 65 # comments: 49">
+      <a class="title" href="https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/" target="_blank" rel="noopener noreferrer">GitHub New pull request overview page in public preview</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-07 23:09</div>
+      <div class="summary">Article URL: https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/ Comments URL: https://news.ycombinator.com/item?id=50408931 Points: 65 # Comments: 49</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="ira velinsky – commodore's industrial designer hacker news (front page) article url: https://www.commodore.ca/commodore-history/ira-velinsky-commodores-amazing-industrial-designer/ comments url: https://news.ycombinator.com/item?id=50408750 points: 12 # comments: 0">
+      <a class="title" href="https://www.commodore.ca/commodore-history/ira-velinsky-commodores-amazing-industrial-designer/" target="_blank" rel="noopener noreferrer">IRA Velinsky – Commodore's Industrial Designer</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-07 22:45</div>
+      <div class="summary">Article URL: https://www.commodore.ca/commodore-history/ira-velinsky-commodores-amazing-industrial-designer/ Comments URL: https://news.ycombinator.com/item?id=50408750 Points: 12 # Comments: 0</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="making any integer with four 2s (2025) hacker news (front page) article url: https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/ comments url: https://news.ycombinator.com/item?id=50408713 points: 63 # comments: 12">
+      <a class="title" href="https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/" target="_blank" rel="noopener noreferrer">Making any integer with four 2s (2025)</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-07 22:38</div>
+      <div class="summary">Article URL: https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/ Comments URL: https://news.ycombinator.com/item?id=50408713 Points: 63 # Comments: 12</div>
+    </li>
     
     <li class="item" data-source="hn_frontpage"
         data-text="show hn: an offline desktop companion to help maintain a healthy blink rhythm hacker news (front page) profession like software engineer, mechanical / graphics designer takes a lot of strain on your eyes, observing minute details for hours and hours on screen can significantly reduce the blink rate which you might not even notice until it gets irreversibly painful, leaving you with dry eyes. i am already a victim of it, working 20 years as a research engineer in computer vision, zooming into pixel level details to hand craft algorithms. now the doctors says its only regular use of lubricating drops can keep your eyes safe. now with ai and available fantastic libraries it's possible to play safe">
@@ -130,6 +165,13 @@
       <a class="title" href="https://wherewerewe.app/" target="_blank" rel="noopener noreferrer">Show HN: Where Were We</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-07 21:08</div>
       <div class="summary">A little web game I made as an anniversary present for my wife. Upload vacation photos and make them into a game. WWW uses EXIF to determine where and when the photo was taken. This is then turned into a game you can send to anyone. Comments URL: https://news.ycombinator.com/item?id=50408082 Points: 17 # Comments: 7</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="claude code's "don't ask again" exposes passwords in 1,122 public github files hacker news (front page) article url: https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again comments url: https://news.ycombinator.com/item?id=50407882 points: 189 # comments: 129">
+      <a class="title" href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again" target="_blank" rel="noopener noreferrer">Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-07 20:45</div>
+      <div class="summary">Article URL: https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again Comments URL: https://news.ycombinator.com/item?id=50407882 Points: 189 # Comments: 129</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -256,6 +298,13 @@
       <a class="title" href="http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html" target="_blank" rel="noopener noreferrer">The $8 Linux Computer (2022)</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-07 14:00</div>
       <div class="summary">Article URL: http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html Comments URL: https://news.ycombinator.com/item?id=50404599 Points: 141 # Comments: 57</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="cancer at sea hacker news (front page) article url: https://biographic.com/cancer-at-sea/ comments url: https://news.ycombinator.com/item?id=50404438 points: 11 # comments: 0">
+      <a class="title" href="https://biographic.com/cancer-at-sea/" target="_blank" rel="noopener noreferrer">Cancer at Sea</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-07 13:37</div>
+      <div class="summary">Article URL: https://biographic.com/cancer-at-sea/ Comments URL: https://news.ycombinator.com/item?id=50404438 Points: 11 # Comments: 0</div>
     </li>
     
     <li class="item" data-source="marginalrevolution"
@@ -630,17 +679,17 @@
     </li>
     
     <li class="item" data-source="hn_frontpage"
-        data-text="tesla to wind down cybertruck production hacker news (front page) article url: https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817 comments url: https://news.ycombinator.com/item?id=50391456 points: 962 # comments: 1816">
-      <a class="title" href="https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817" target="_blank" rel="noopener noreferrer">Tesla to wind down Cybertruck production</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-06 12:13</div>
-      <div class="summary">Article URL: https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817 Comments URL: https://news.ycombinator.com/item?id=50391456 Points: 962 # Comments: 1816</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
         data-text="tesla winds down cybertruck production after years of poor sales in few markets hacker news (front page) article url: https://www.msn.com/en-us/technology/tech-companies/tesla-to-wind-down-cybertruck-production-after-years-of-poor-sales-in-few-markets/ar-aa2gszgv comments url: https://news.ycombinator.com/item?id=50391456 points: 180 # comments: 209">
       <a class="title" href="https://www.msn.com/en-us/technology/tech-companies/tesla-to-wind-down-cybertruck-production-after-years-of-poor-sales-in-few-markets/ar-AA2gSZGv" target="_blank" rel="noopener noreferrer">Tesla winds down Cybertruck production after years of poor sales in few markets</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-06 12:13</div>
       <div class="summary">Article URL: https://www.msn.com/en-us/technology/tech-companies/tesla-to-wind-down-cybertruck-production-after-years-of-poor-sales-in-few-markets/ar-AA2gSZGv Comments URL: https://news.ycombinator.com/item?id=50391456 Points: 180 # Comments: 209</div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="tesla to wind down cybertruck production hacker news (front page) article url: https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817 comments url: https://news.ycombinator.com/item?id=50391456 points: 962 # comments: 1816">
+      <a class="title" href="https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817" target="_blank" rel="noopener noreferrer">Tesla to wind down Cybertruck production</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-06 12:13</div>
+      <div class="summary">Article URL: https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817 Comments URL: https://news.ycombinator.com/item?id=50391456 Points: 962 # Comments: 1816</div>
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -1168,18 +1217,18 @@
       <div class="summary">Article URL: https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/ Comments URL: https://news.ycombinator.com/item?id=50373149 Points: 27 # Comments: 28</div>
     </li>
     
-    <li class="item" data-source="huggingface"
-        data-text="a closer look at phonon tts. launching high-quality on-device speech that tops the benchmarks. hugging face blog ">
-      <a class="title" href="https://huggingface.co/blog/phonon-tts" target="_blank" rel="noopener noreferrer">A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.</a>
-      <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-11-05 00:00</div>
-      
-    </li>
-    
     <li class="item" data-source="openai"
         data-text="franklin templeton uses openai to support investment research openai news starting with equity research, franklin templeton is developing ai workflows to help portfolio managers compare research views and examine investment risks.">
       <a class="title" href="https://openai.com/index/franklin-templeton" target="_blank" rel="noopener noreferrer">Franklin Templeton uses OpenAI to support investment research</a>
       <div class="byline"><span class="src">OpenAI News</span> · 2026-11-05 00:00</div>
       <div class="summary">Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.</div>
+    </li>
+    
+    <li class="item" data-source="huggingface"
+        data-text="a closer look at phonon tts. launching high-quality on-device speech that tops the benchmarks. hugging face blog ">
+      <a class="title" href="https://huggingface.co/blog/phonon-tts" target="_blank" rel="noopener noreferrer">A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.</a>
+      <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-11-05 00:00</div>
+      
     </li>
     
     <li class="item" data-source="hn_frontpage"
@@ -1967,17 +2016,17 @@
     </li>
     
     <li class="item" data-source="openai"
-        data-text="heimstaden is changing residential real estate management with ai openai news discover how heimstaden uses openai’s chatgpt enterprise and codex to transform property management, cut costs, and empower employees across europe.">
-      <a class="title" href="https://openai.com/index/heimstaden" target="_blank" rel="noopener noreferrer">Heimstaden is changing residential real estate management with AI</a>
-      <div class="byline"><span class="src">OpenAI News</span> · 2026-11-03 08:00</div>
-      <div class="summary">Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.</div>
-    </li>
-    
-    <li class="item" data-source="openai"
         data-text="how cisco defends at machine speed with openai openai news cisco combines network intelligence with openai models to strengthen enterprise security. learn how it is building more adaptive defenses.">
       <a class="title" href="https://openai.com/index/cisco-cyber" target="_blank" rel="noopener noreferrer">How Cisco defends at machine speed with OpenAI</a>
       <div class="byline"><span class="src">OpenAI News</span> · 2026-11-03 08:00</div>
       <div class="summary">Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.</div>
+    </li>
+    
+    <li class="item" data-source="openai"
+        data-text="heimstaden is changing residential real estate management with ai openai news discover how heimstaden uses openai’s chatgpt enterprise and codex to transform property management, cut costs, and empower employees across europe.">
+      <a class="title" href="https://openai.com/index/heimstaden" target="_blank" rel="noopener noreferrer">Heimstaden is changing residential real estate management with AI</a>
+      <div class="byline"><span class="src">OpenAI News</span> · 2026-11-03 08:00</div>
+      <div class="summary">Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.</div>
     </li>
     
     <li class="item" data-source="marginalrevolution"
@@ -2086,13 +2135,6 @@
     </li>
     
     <li class="item" data-source="huggingface"
-        data-text="transformers model integration contracts hugging face blog ">
-      <a class="title" href="https://huggingface.co/blog/transformers-mic" target="_blank" rel="noopener noreferrer">Transformers Model Integration Contracts</a>
-      <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-11-03 00:00</div>
-      
-    </li>
-    
-    <li class="item" data-source="huggingface"
         data-text="cwe-bench v2: more coverage, quality, and transparency hugging face blog ">
       <a class="title" href="https://huggingface.co/blog/cwe-bench" target="_blank" rel="noopener noreferrer">CWE-bench v2: More coverage, quality, and transparency</a>
       <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-11-03 00:00</div>
@@ -2104,6 +2146,13 @@
       <a class="title" href="https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer" target="_blank" rel="noopener noreferrer">OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer</a>
       <div class="byline"><span class="src">OpenAI News</span> · 2026-11-03 00:00</div>
       <div class="summary">Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.</div>
+    </li>
+    
+    <li class="item" data-source="huggingface"
+        data-text="transformers model integration contracts hugging face blog ">
+      <a class="title" href="https://huggingface.co/blog/transformers-mic" target="_blank" rel="noopener noreferrer">Transformers Model Integration Contracts</a>
+      <div class="byline"><span class="src">Hugging Face Blog</span> · 2026-11-03 00:00</div>
+      
     </li>
     
     <li class="item" data-source="simonwillison"
@@ -2268,17 +2317,17 @@
     </li>
     
     <li class="item" data-source="hn_frontpage"
-        data-text="show hn: subvocal – talk to your computer without making noise hacker news (front page) hi hn, we're aarush and arnav from the subvocal company (yc f26) ( https://subvocal.company/ ). we’re building smart glasses that let you talk to your computer without talking out loud. you can mouth words silently and discreetly and the glasses decode them to text at the speed of speech. here's a video of dave from yc trying it out: https://www.youtube.com/watch?v=9qdx1eobvyi (edit: you don't actually have to move your lips or even open your mouth for this to work! since the rf can see inside your mouth the system can be fine tuned on "internal speech". this isn't the automatic tongue movemen">
-      <a class="title" href="https://news.ycombinator.com/item?id=50340088" target="_blank" rel="noopener noreferrer">Show HN: Subvocal – Talk to your computer without making noise</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-02 17:16</div>
-      <div class="summary">Hi HN, we're Aarush and Arnav from The Subvocal Company (YC F26) ( https://subvocal.company/ ). We’re building smart glasses that let you talk to your computer without talking out loud. You can mouth words silently and discreetly and the glasses decode them to text at the speed of speech. Here's a video of Dave from YC trying it out: https://www.youtube.com/watch?v=9QdX1eObVYI (Edit: you don't actually have to move your lips or even open your mouth for this to work! Since the RF can see inside your mouth the system can be fine tuned on "internal speech". This isn't the automatic tongue movemen</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
         data-text="show hn: subvocal – talk to your computer without making noise hacker news (front page) hi hn, we're aarush and arnav from the subvocal company (yc f26). we’re building smart glasses that let you talk to your computer without talking out loud. you can mouth words silently and discreetly and the glasses decode them to text at the speed of speech. here's a video of dave from yc trying it out: https://www.youtube.com/watch?v=9qdx1eobvyi (edit: you don't actually have to move your lips or even open your mouth for this to work! since the rf can see inside your mouth the system can be fine tuned on "internal speech". this isn't the automatic tongue movements that occur when "thinking" ">
       <a class="title" href="https://subvocal.company/" target="_blank" rel="noopener noreferrer">Show HN: Subvocal – Talk to your computer without making noise</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-02 17:16</div>
       <div class="summary">Hi HN, we're Aarush and Arnav from The Subvocal Company (YC F26). We’re building smart glasses that let you talk to your computer without talking out loud. You can mouth words silently and discreetly and the glasses decode them to text at the speed of speech. Here's a video of Dave from YC trying it out: https://www.youtube.com/watch?v=9QdX1eObVYI (Edit: you don't actually have to move your lips or even open your mouth for this to work! Since the RF can see inside your mouth the system can be fine tuned on "internal speech". This isn't the automatic tongue movements that occur when "thinking" </div>
+    </li>
+    
+    <li class="item" data-source="hn_frontpage"
+        data-text="show hn: subvocal – talk to your computer without making noise hacker news (front page) hi hn, we're aarush and arnav from the subvocal company (yc f26) ( https://subvocal.company/ ). we’re building smart glasses that let you talk to your computer without talking out loud. you can mouth words silently and discreetly and the glasses decode them to text at the speed of speech. here's a video of dave from yc trying it out: https://www.youtube.com/watch?v=9qdx1eobvyi (edit: you don't actually have to move your lips or even open your mouth for this to work! since the rf can see inside your mouth the system can be fine tuned on "internal speech". this isn't the automatic tongue movemen">
+      <a class="title" href="https://news.ycombinator.com/item?id=50340088" target="_blank" rel="noopener noreferrer">Show HN: Subvocal – Talk to your computer without making noise</a>
+      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-11-02 17:16</div>
+      <div class="summary">Hi HN, we're Aarush and Arnav from The Subvocal Company (YC F26) ( https://subvocal.company/ ). We’re building smart glasses that let you talk to your computer without talking out loud. You can mouth words silently and discreetly and the glasses decode them to text at the speed of speech. Here's a video of Dave from YC trying it out: https://www.youtube.com/watch?v=9QdX1eObVYI (Edit: you don't actually have to move your lips or even open your mouth for this to work! Since the RF can see inside your mouth the system can be fine tuned on "internal speech". This isn't the automatic tongue movemen</div>
     </li>
     
     <li class="item" data-source="marginalrevolution"
@@ -2506,17 +2555,17 @@
     </li>
     
     <li class="item" data-source="openai"
-        data-text="qodo builds context into ai code review with codex openai news qodo brings company knowledge and coding standards into codex, helping developers catch p0 issues across repositories before opening a pull request.">
-      <a class="title" href="https://openai.com/index/qodo-codex-plugin" target="_blank" rel="noopener noreferrer">Qodo builds context into AI code review with Codex</a>
-      <div class="byline"><span class="src">OpenAI News</span> · 2026-11-02 00:00</div>
-      <div class="summary">Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.</div>
-    </li>
-    
-    <li class="item" data-source="openai"
         data-text="openai appoints dan driscoll as senior counselor for national security modernization openai news openai appoints dan driscoll to advise on responsible ai for national security modernization, cyber resilience, and collaboration with u.s. allies.">
       <a class="title" href="https://openai.com/index/dan-driscoll-joins-openai" target="_blank" rel="noopener noreferrer">OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization</a>
       <div class="byline"><span class="src">OpenAI News</span> · 2026-11-02 00:00</div>
       <div class="summary">OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.</div>
+    </li>
+    
+    <li class="item" data-source="openai"
+        data-text="qodo builds context into ai code review with codex openai news qodo brings company knowledge and coding standards into codex, helping developers catch p0 issues across repositories before opening a pull request.">
+      <a class="title" href="https://openai.com/index/qodo-codex-plugin" target="_blank" rel="noopener noreferrer">Qodo builds context into AI code review with Codex</a>
+      <div class="byline"><span class="src">OpenAI News</span> · 2026-11-02 00:00</div>
+      <div class="summary">Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.</div>
     </li>
     
     <li class="item" data-source="simonwillison"
@@ -2853,55 +2902,6 @@
       <a class="title" href="https://www.pgdp.net/c/" target="_blank" rel="noopener noreferrer">Distributed Proofreaders</a>
       <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-31 20:56</div>
       <div class="summary">Article URL: https://www.pgdp.net/c/ Comments URL: https://news.ycombinator.com/item?id=50320137 Points: 9 # Comments: 0</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="with 86% of the words, you might understand only 38% of an anime's lines hacker news (front page) article url: https://learnfromx.com/research/anime-word-coverage-vs-lines-understood comments url: https://news.ycombinator.com/item?id=50320028 points: 24 # comments: 18">
-      <a class="title" href="https://learnfromx.com/research/anime-word-coverage-vs-lines-understood" target="_blank" rel="noopener noreferrer">With 86% of the words, you might understand only 38% of an anime's lines</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-31 20:46</div>
-      <div class="summary">Article URL: https://learnfromx.com/research/anime-word-coverage-vs-lines-understood Comments URL: https://news.ycombinator.com/item?id=50320028 Points: 24 # Comments: 18</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="bidirectional charging during grid outages hacker news (front page) article url: https://www.jefftk.com/p/bidirectional-charging-during-grid-outages comments url: https://news.ycombinator.com/item?id=50319749 points: 6 # comments: 0">
-      <a class="title" href="https://www.jefftk.com/p/bidirectional-charging-during-grid-outages" target="_blank" rel="noopener noreferrer">Bidirectional Charging During Grid Outages</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-31 20:21</div>
-      <div class="summary">Article URL: https://www.jefftk.com/p/bidirectional-charging-during-grid-outages Comments URL: https://news.ycombinator.com/item?id=50319749 Points: 6 # Comments: 0</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="surviving "the graduate" hacker news (front page) https://archive.ph/eqn1f comments url: https://news.ycombinator.com/item?id=50319563 points: 19 # comments: 1">
-      <a class="title" href="https://www.newyorker.com/culture/the-weekend-essay/dustin-hoffman-on-surviving-the-graduate" target="_blank" rel="noopener noreferrer">Surviving "The Graduate"</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-31 20:02</div>
-      <div class="summary">https://archive.ph/Eqn1F Comments URL: https://news.ycombinator.com/item?id=50319563 Points: 19 # Comments: 1</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="hackertube: youtube built from videos recommended by hn hacker news (front page) youtube-style ui over 6,454 videos sourced from 39,834 hn comments since 2007. https://hackertube.org/ comments url: https://news.ycombinator.com/item?id=50319510 points: 312 # comments: 124">
-      <a class="title" href="https://karpathy.bearblog.dev/hacker-tube/" target="_blank" rel="noopener noreferrer">HackerTube: YouTube built from videos recommended by HN</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-31 19:56</div>
-      <div class="summary">YouTube-style UI over 6,454 videos sourced from 39,834 HN comments since 2007. https://hackertube.org/ Comments URL: https://news.ycombinator.com/item?id=50319510 Points: 312 # Comments: 124</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="anthropic blocks users for anything touching training larger models hacker news (front page) article url: https://twitter.com/jiahaoshao1/status/2116475922190922088 comments url: https://news.ycombinator.com/item?id=50319358 points: 72 # comments: 15">
-      <a class="title" href="https://twitter.com/jiahaoshao1/status/2116475922190922088" target="_blank" rel="noopener noreferrer">Anthropic blocks users for anything touching training larger models</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-31 19:39</div>
-      <div class="summary">Article URL: https://twitter.com/jiahaoshao1/status/2116475922190922088 Comments URL: https://news.ycombinator.com/item?id=50319358 Points: 72 # Comments: 15</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="show hn: nes contra (1987) port (asm –> c and then c –> webassembly) hacker news (front page) based on vermiceli's annotated disassembly of contra: https://github.com/vermiceli/nes-contra-us . thanks for the great work. i ported it in two steps. first to c: the game logic is translated routine by routine from the 6502 assembly, and checked frame by frame against the original in the mesen emulator. then the c code to webassembly so it runs in the browser. the cherry on top: online multiplayer, so two players can play co-op over the internet. source: https://github.com/epoyraz/nes-contra-us comments url: https://news.ycombinator.com/item?id=50319169 points: 27 # comments: 15">
-      <a class="title" href="https://epoyraz.github.io/nes-contra-us/" target="_blank" rel="noopener noreferrer">Show HN: NES Contra (1987) port (ASM –> C and then C –> WebAssembly)</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-31 19:18</div>
-      <div class="summary">Based on vermiceli's annotated disassembly of Contra: https://github.com/vermiceli/nes-contra-us . Thanks for the great work. I ported it in two steps. First to C: the game logic is translated routine by routine from the 6502 assembly, and checked frame by frame against the original in the Mesen emulator. Then the C code to WebAssembly so it runs in the browser. The cherry on top: online multiplayer, so two players can play co-op over the internet. Source: https://github.com/epoyraz/nes-contra-us Comments URL: https://news.ycombinator.com/item?id=50319169 Points: 27 # Comments: 15</div>
-    </li>
-    
-    <li class="item" data-source="hn_frontpage"
-        data-text="tcp use-after-free: cve-2026-98432 / cvss 9.8 hacker news (front page) article url: https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf comments url: https://news.ycombinator.com/item?id=50319143 points: 184 # comments: 88">
-      <a class="title" href="https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf" target="_blank" rel="noopener noreferrer">TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8</a>
-      <div class="byline"><span class="src">Hacker News (front page)</span> · 2026-10-31 19:16</div>
-      <div class="summary">Article URL: https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf Comments URL: https://news.ycombinator.com/item?id=50319143 Points: 184 # Comments: 88</div>
     </li>
     
   </ul>
